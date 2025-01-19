@@ -9,7 +9,7 @@ cd /home/laurens/Somtoday_Agendas/Madelief
 echo
 
 echo "# Get up to date"
-sudo git pull
+sudo git pull --rebase
 
 echo
 
