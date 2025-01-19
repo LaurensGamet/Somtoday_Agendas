@@ -13,3 +13,8 @@ Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
+To https://github.com/LaurensGamet/Somtoday_Agendas.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 5f27ed24c6df56f4756e3eb581703ce9dca92676 but expected 1e8a07353474b8d878a36d8008e1546cbf861b79)
+error: failed to push some refs to 'https://github.com/LaurensGamet/Somtoday_Agendas.git'
+
+
