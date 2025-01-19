@@ -53,5 +53,5 @@ def monitor_log_files(files_to_monitor):
     observer.join()
 
 if __name__ == "__main__":
-    log_files = ["Somtoday_Laurens.log", "Somtoday_Madelief.log"]
+    log_files = ["Laurens.log", "Madelief.log"]
     monitor_log_files(log_files)
