@@ -44,3 +44,9 @@ error: failed to push some refs to 'https://github.com/LaurensGamet/Somtoday_Age
 # Get in right directory
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 47da101cb66c0b04bf56586b0df5ba4a0d5d3f2d.
+Already up to date.
+
+# Run main file
