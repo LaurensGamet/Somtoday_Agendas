@@ -57,3 +57,4 @@ if __name__ == "__main__":
             time.sleep(120)  # Wait for 120 seconds
     except KeyboardInterrupt:
         print("Updater stopped.")
+
