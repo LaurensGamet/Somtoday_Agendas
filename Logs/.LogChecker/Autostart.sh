@@ -14,3 +14,7 @@ tmux send-keys -t Somtoday_Agendas:0.2 "sudo python3 -m http.server" C-m
 
 tmux send-keys -t Somtoday_Agendas:0.3 "sudo python3 /home/laurens/Somtoday_Agendas/.autoupdategit.py" C-m
 
+sleep 15
+
+sudo bash /home/laurens/Somtoday_Agendas/Laurens/run.sh >> /home/laurens/Somtoday_Agendas/Logs/Laurens.log 2>&1 
+sudo bash /home/laurens/Somtoday_Agendas/Madelief/run.sh >> /home/laurens/Somtoday_Agendas/Logs/Madelief.log 2>&1
