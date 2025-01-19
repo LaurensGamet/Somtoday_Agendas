@@ -34,3 +34,8 @@ Already up to date.
 [main 77f01a5] 183019012025
  4 files changed, 458 insertions(+), 6052 deletions(-)
  delete mode 100644 Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics
+To https://github.com/LaurensGamet/Somtoday_Agendas.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 3f847ce9e3192f1915ecad3a5b2e308f926eca06 but expected 2c4285e00e35149d25bcfbbbbb5c3cac432904b2)
+error: failed to push some refs to 'https://github.com/LaurensGamet/Somtoday_Agendas.git'
+
+
