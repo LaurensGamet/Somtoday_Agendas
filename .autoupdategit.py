@@ -65,6 +65,8 @@ class ChangeHandler(FileSystemEventHandler):
                 print(f"Change detected in file: {event.src_path}")
                 self.last_run = current_time
                 update_git_repo()
+                time.sleep(60)  # Wait for 1 minute and then recheck for changes
+                update_git_repo()
 
     def on_created(self, event):
         if not event.is_directory:  # Ignore directory-level changes
@@ -72,6 +74,8 @@ class ChangeHandler(FileSystemEventHandler):
             if current_time - self.last_run >= 60:  # Ensure at least 1 minute between updates
                 print(f"File created: {event.src_path}")
                 self.last_run = current_time
+                update_git_repo()
+                time.sleep(60)  # Wait for 1 minute and then recheck for changes
                 update_git_repo()
 
 # Main function to set up folder monitoring
