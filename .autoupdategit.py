@@ -24,44 +24,36 @@ class LogFileHandler(FileSystemEventHandler):
 
     def commit_and_push_changes(self, file_path):
         try:
-            # Ensure local repository is up to date
-            print("Fetching and pulling latest changes...")
-            subprocess.run(["git", "fetch"], check=True)
-            subprocess.run(["git", "pull", "--rebase"], check=True)
-
-            # Stage the file
-            subprocess.run(["git", "add", file_path], check=True)
-
-            # Check for staged changes
-            diff_check = subprocess.run(["git", "diff", "--cached", "--exit-code"], capture_output=True)
-            if diff_check.returncode != 0:
-                current_datetime = datetime.now().strftime("%H%M%d%m%Y")
-                commit_message = f"{current_datetime}"
-
-                # Commit and push changes
-                subprocess.run(["git", "commit", "-m", commit_message], check=True)
-                subprocess.run(["git", "push"], check=True)
-                print(f"Changes pushed successfully for {file_path} with message '{commit_message}'.")
-            else:
-                print(f"No changes to commit for {file_path}.")
-        except subprocess.CalledProcessError as e:
-            print(f"Error during Git operation for {file_path}: {e}")
-            print("\nAttempting to stash changes...")
-            self.stash_changes()
-
-    def stash_changes(self):
-        try:
-            # Stash local changes to avoid conflicts
+            # Ensure a clean working directory
+            print("Checking working directory for changes...")
+            subprocess.run(["git", "add", "."], check=True)
             subprocess.run(["git", "stash", "push", "-m", "Auto-stash before pull"], check=True)
 
-            # Pull latest changes after stashing
-            subprocess.run(["git", "pull", "--rebase"], check=True)
+            # Pull latest changes with rebase
+            print("Pulling latest changes...")
+            pull_result = subprocess.run(["git", "pull", "--rebase"], capture_output=True, text=True)
+            if pull_result.returncode != 0:
+                print("Pull failed. Aborting rebase...")
+                subprocess.run(["git", "rebase", "--abort"], check=True)
+                subprocess.run(["git", "stash", "pop"], check=True)  # Restore stashed changes
+                print("Rebase aborted. Stashed changes reapplied.")
+                return
 
-            # Apply stashed changes
+            # Apply stashed changes after pulling
             subprocess.run(["git", "stash", "pop"], check=True)
-            print("Stashed changes applied successfully.")
+
+            # Stage and commit the modified file
+            subprocess.run(["git", "add", file_path], check=True)
+            current_datetime = datetime.now().strftime("%H%M%d%m%Y")
+            commit_message = f"{current_datetime}"
+            subprocess.run(["git", "commit", "-m", commit_message], check=True)
+
+            # Push changes to the remote repository
+            print("Pushing changes...")
+            subprocess.run(["git", "push"], check=True)
+            print(f"Changes pushed successfully for {file_path} with message '{commit_message}'.")
         except subprocess.CalledProcessError as e:
-            print(f"Error during stashing process: {e}")
+            print(f"Error during Git operation: {e}")
 
 def monitor_directories(directories_to_monitor):
     event_handler = LogFileHandler(directories_to_monitor)
