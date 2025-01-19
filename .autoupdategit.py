@@ -2,6 +2,7 @@ import subprocess
 import time
 from datetime import datetime
 
+
 # Function to execute a Git command and handle errors
 def run_git_command(command):
     try:
@@ -17,6 +18,7 @@ def run_git_command(command):
         print(e.stderr.strip())
         return None
 
+
 # Function to pull, commit, and push updates
 def update_git_repo():
     print("Updating Git repository...")
@@ -27,10 +29,13 @@ def update_git_repo():
         print(f"Git pull output:\n{pull_output}")
     
     # Stage all changes
-    add_output = run_git_command(["git", "add", "."])
-    if add_output is not None:
-        print("Changes staged for commit.")
+    run_git_command(["git", "add", "."])
     
+    # Check for changes to commit
+    status_output = run_git_command(["git", "status", "--porcelain"])
+    if status_output:
+        print("Changes detected. Preparing to commit...")
+        
         # Create commit message with the current date and time
         now = datetime.now()
         commit_message = now.strftime("%H%M%d%m%Y")  # Format: HHMMDDMMYYYY
@@ -39,13 +44,14 @@ def update_git_repo():
         commit_output = run_git_command(["git", "commit", "-m", commit_message])
         if commit_output:
             print(f"Commit successful:\n{commit_output}")
-            
-            # Push changes
-            push_output = run_git_command(["git", "push"])
-            if push_output:
-                print(f"Push successful:\n{push_output}")
-        else:
-            print("No changes to commit.")
+        
+        # Push changes
+        push_output = run_git_command(["git", "push"])
+        if push_output:
+            print(f"Push successful:\n{push_output}")
+    else:
+        print("No changes to commit.")
+
 
 # Run the update every 2 minutes
 if __name__ == "__main__":
@@ -57,4 +63,3 @@ if __name__ == "__main__":
             time.sleep(120)  # Wait for 120 seconds
     except KeyboardInterrupt:
         print("Updater stopped.")
-
