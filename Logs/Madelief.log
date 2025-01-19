@@ -18,3 +18,8 @@ Changes not staged for commit:
 	modified:   Final-File.ics
 
 no changes added to commit (use "git add" and/or "git commit -a")
+To https://github.com/LaurensGamet/Somtoday_Agendas.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 5f31bffe5cdf0b4600419e2ff594bc5131ea12f1 but expected 717530dc613634aad7d47d21a1a249246ea163b7)
+error: failed to push some refs to 'https://github.com/LaurensGamet/Somtoday_Agendas.git'
+
+
