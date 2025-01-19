@@ -3,13 +3,13 @@ import json
 import requests
 from slackcredentials import Incoming_Webhook_URL
 
-log_file_path = '/home/laurens/logs/Somtoday_Laurens.log'
+log_file_path = '/home/laurens/Somtoday_Agendas/Logs/Laurens.log'
 keywords = ["error", "failed", "exception", "fatal"]  # Keywords to detect
 
 slack_webhook = Incoming_Webhook_URL
 slack_message_template = {
         "username": "Somtoday Laurens",
-        "text": "Warning!\nThe latest log contained an error!\n<https://github.com/LaurensGamet/Logchecker/blob/main/Somtoday_Laurens.log|Click here to view logs>",
+        "text": "Warning!\nThe latest log contained an error!\n<https://github.com/LaurensGamet/Somtoday_Agendas/blob/main/Logs/Laurens.log|Click here to view logs>",
 	"icon_url": "http://188.90.170.38:8000/.laurens.jpg"
 }
 
