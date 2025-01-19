@@ -5,6 +5,9 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import os
 
+# Path to the Git repository
+GIT_REPO_PATH = "/home/laurens/Somtoday_Agendas/"
+
 # Function to execute a Git command and handle errors
 def run_git_command(command):
     try:
@@ -12,7 +15,8 @@ def run_git_command(command):
             command,
             check=True,
             text=True,
-            capture_output=True
+            capture_output=True,
+            cwd=GIT_REPO_PATH  # Ensure commands are executed in the correct repository
         )
         return result.stdout.strip()
     except subprocess.CalledProcessError as e:
