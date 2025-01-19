@@ -34,7 +34,7 @@ def update_git_repo():
     # Check for changes to commit
     status_output = run_git_command(["git", "status", "--porcelain"])
     if status_output:
-        print("Changes detected. Preparing to commit...")
+        print(f"Changes detected. Preparing to commit...")
         
         # Create commit message with the current date and time
         now = datetime.now()
