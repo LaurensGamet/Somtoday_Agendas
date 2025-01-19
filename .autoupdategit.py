@@ -21,7 +21,7 @@ def run_git_command(command):
 
 # Function to pull, commit, and push updates
 def update_git_repo():
-    print("Updating Git repository...")
+    print(f"Updating Git repository...\n")
     
     # Pull updates
     pull_output = run_git_command(["git", "pull"])
@@ -50,7 +50,7 @@ def update_git_repo():
         if push_output:
             print(f"Push successful:\n{push_output}\n")
     else:
-        print("No changes to commit.")
+        print(f"No changes to commit.\n")
 
 
 # Run the update every 2 minutes
