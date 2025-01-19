@@ -1,0 +1,37 @@
+18:17 19-01-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site.py", line 606, in <module>
+    main()
+  File "/usr/lib/python3.9/site.py", line 593, in main
+    known_paths = addsitepackages(known_paths)
+  File "/usr/lib/python3.9/site.py", line 376, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/usr/lib/python3.9/site.py", line 214, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib/python3.9/site.py", line 175, in addpackage
+    exec(line)
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.9/importlib/util.py", line 2, in <module>
+    from . import abc
+  File "/usr/lib/python3.9/importlib/abc.py", line 17, in <module>
+    from typing import Protocol, runtime_checkable
+  File "/usr/lib/python3.9/typing.py", line 22, in <module>
+    import collections.abc
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 881, in get_code
+  File "<frozen importlib._bootstrap_external>", line 979, in get_data
+KeyboardInterrupt
+
+# Upload to Github
