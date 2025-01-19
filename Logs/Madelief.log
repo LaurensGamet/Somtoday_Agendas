@@ -1,48 +1,20 @@
-19:29 19-01-2025
+19:40 19-01-2025
 
 # Get in right directory
 
 # Get up to date
-19:30 19-01-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
 warning: fetch updated the current branch head.
 fast-forwarding your working tree from
-commit 767686972fabc6b898f7448181d6641fbb574595.
+commit 81cc20b01619726244449622f85558cef4546657.
 error: Your local changes to the following files would be overwritten by merge:
-	Logs/Laurens.log
+	Laurens/Final-File.ics
 Please commit your changes or stash them before you merge.
 Aborting
 fatal: Cannot fast-forward your working tree.
 After making sure that you saved anything precious from
-$ git diff 767686972fabc6b898f7448181d6641fbb574595
+$ git diff 81cc20b01619726244449622f85558cef4546657
 output, run
 $ git reset --hard
 to recover.
 
 # Run main file
-
-# Upload to Github
-The file does not exist
-[main f1d6de7] 192919012025
- 4 files changed, 6954 insertions(+), 1352 deletions(-)
- create mode 100644 Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics
-
-# Upload to Github
-[main 114950b] 193019012025
- 4 files changed, 904 insertions(+), 6499 deletions(-)
- delete mode 100644 Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics
-To https://github.com/LaurensGamet/Somtoday_Agendas.git
-   1947040..8771f4f  main -> main
-
-
-To https://github.com/LaurensGamet/Somtoday_Agendas.git
- ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 2106ffb5d4e4e0d9578ef1c76a322c173b47f629 but expected 194704085b8b0c088be10a5ebc72323505ba35dd)
-error: failed to push some refs to 'https://github.com/LaurensGamet/Somtoday_Agendas.git'
-
-
