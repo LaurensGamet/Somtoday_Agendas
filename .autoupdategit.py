@@ -24,6 +24,11 @@ class LogFileHandler(FileSystemEventHandler):
 
     def commit_and_push_changes(self, file_path):
         try:
+            # Ensure local repository is up to date
+            print("Fetching and pulling latest changes...")
+            subprocess.run(["git", "fetch"], check=True)
+            subprocess.run(["git", "pull", "--rebase"], check=True)
+
             # Stage the file
             subprocess.run(["git", "add", file_path], check=True)
 
@@ -41,6 +46,22 @@ class LogFileHandler(FileSystemEventHandler):
                 print(f"No changes to commit for {file_path}.")
         except subprocess.CalledProcessError as e:
             print(f"Error during Git operation for {file_path}: {e}")
+            print("\nAttempting to stash changes...")
+            self.stash_changes()
+
+    def stash_changes(self):
+        try:
+            # Stash local changes to avoid conflicts
+            subprocess.run(["git", "stash", "push", "-m", "Auto-stash before pull"], check=True)
+
+            # Pull latest changes after stashing
+            subprocess.run(["git", "pull", "--rebase"], check=True)
+
+            # Apply stashed changes
+            subprocess.run(["git", "stash", "pop"], check=True)
+            print("Stashed changes applied successfully.")
+        except subprocess.CalledProcessError as e:
+            print(f"Error during stashing process: {e}")
 
 def monitor_directories(directories_to_monitor):
     event_handler = LogFileHandler(directories_to_monitor)
