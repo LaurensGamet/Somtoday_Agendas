@@ -4,7 +4,7 @@ current_datetime=$(date +"%H%M%d%m%Y")
 echo $(date +"%H"":""%M"" ""%d""-""%m""-""%Y")
 echo
 echo "# Get in right directory"
-cd /home/laurens/Somtoday_Madelief
+cd /home/laurens/Somtoday_Agendas/Madelief
 
 echo
 
@@ -14,7 +14,7 @@ sudo git pull
 echo
 
 echo "# Run main file"
-sudo python3 /home/laurens/Somtoday_Madelief/main.py
+sudo python3 /home/laurens/Somtoday_Agendas/Madelief/main.py
 
 echo
 
