@@ -1,6 +1,3 @@
-tmux kill-ses -t httpserver
-tmux kill-ses -t Somtoday_Laurens
-tmux kill-ses -t Somtoday_Madelief
-tmux kill-ses -t autologgitupdater
+tmux kill-ses -t Somtoday_Agendas
 
-sudo sh Autostart.sh
+sudo bash Autostart.sh
