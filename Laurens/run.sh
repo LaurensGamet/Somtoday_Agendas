@@ -9,12 +9,13 @@ cd /home/laurens/Somtoday_Agendas/Laurens
 echo
 
 echo "# Get up to date"
-sudo git pull --rebase
+sudo git pull 
 
 echo
 
 echo "# Run main file"
 sudo python3 /home/laurens/Somtoday_Agendas/Laurens/main.py
+echo "# Done"
 
 echo  
 echo  
