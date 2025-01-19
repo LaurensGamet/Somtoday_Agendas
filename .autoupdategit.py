@@ -26,7 +26,7 @@ def update_git_repo():
     # Pull updates
     pull_output = run_git_command(["git", "pull"])
     if pull_output:
-        print(f"Git pull output:\n{pull_output}")
+        print(f"Git pull output:\n{pull_output}\n")
     
     # Stage all changes
     run_git_command(["git", "add", "."])
@@ -43,23 +43,23 @@ def update_git_repo():
         # Commit changes
         commit_output = run_git_command(["git", "commit", "-m", commit_message])
         if commit_output:
-            print(f"Commit successful:\n{commit_output}")
+            print(f"Commit successful:\n{commit_output}\n")
         
         # Push changes
         push_output = run_git_command(["git", "push"])
         if push_output:
-            print(f"Push successful:\n{push_output}")
+            print(f"Push successful:\n{push_output}\n")
     else:
         print("No changes to commit.")
 
 
 # Run the update every 2 minutes
 if __name__ == "__main__":
-    print("Starting Git repository auto-updater. Press Ctrl+C to stop.")
+    print("Starting Git repository auto-updater. Press Ctrl+C to stop.\n")
     try:
         while True:
             update_git_repo()
-            print("Waiting for 2 minutes...")
+            print("Waiting for 2 minutes...\n")
             time.sleep(120)  # Wait for 120 seconds
     except KeyboardInterrupt:
         print("Updater stopped.")
