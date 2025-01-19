@@ -3,6 +3,7 @@ import time
 from datetime import datetime
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+import os
 
 # Function to execute a Git command and handle errors
 def run_git_command(command):
@@ -58,8 +59,12 @@ class ChangeHandler(FileSystemEventHandler):
         super().__init__()
         self.last_run = 0  # Timestamp of the last update
 
+    def is_in_git_folder(self, path):
+        """ Check if the event is inside the .git folder """
+        return '.git' in path
+
     def on_modified(self, event):
-        if not event.is_directory:  # Ignore directory-level changes
+        if not event.is_directory and not self.is_in_git_folder(event.src_path):  # Ignore changes in .git folder
             current_time = time.time()
             if current_time - self.last_run >= 60:  # Ensure at least 1 minute between updates
                 print(f"Change detected in file: {event.src_path}")
@@ -69,7 +74,7 @@ class ChangeHandler(FileSystemEventHandler):
                 update_git_repo()
 
     def on_created(self, event):
-        if not event.is_directory:  # Ignore directory-level changes
+        if not event.is_directory and not self.is_in_git_folder(event.src_path):  # Ignore creations in .git folder
             current_time = time.time()
             if current_time - self.last_run >= 60:  # Ensure at least 1 minute between updates
                 print(f"File created: {event.src_path}")
