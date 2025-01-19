@@ -16,13 +16,6 @@ echo
 echo "# Run main file"
 sudo python3 /home/laurens/Somtoday_Agendas/Madelief/main.py
 
-echo
-
-echo "# Upload to Github"
-sudo git add -A
-sudo git commit -m "$current_datetime"
-sudo git push
-
 echo  
 echo  
 
