@@ -1,11 +1,8 @@
-20:04 19-01-2025
+20:08 19-01-2025
 
 # Get in right directory
 
 # Get up to date
-error: cannot pull with rebase: You have unstaged changes.
-error: please commit or stash them.
+Already up to date.
 
 # Run main file
-
-
