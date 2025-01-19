@@ -41,3 +41,8 @@ To https://github.com/LaurensGamet/Somtoday_Agendas.git
    1947040..8771f4f  main -> main
 
 
+To https://github.com/LaurensGamet/Somtoday_Agendas.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 2106ffb5d4e4e0d9578ef1c76a322c173b47f629 but expected 194704085b8b0c088be10a5ebc72323505ba35dd)
+error: failed to push some refs to 'https://github.com/LaurensGamet/Somtoday_Agendas.git'
+
+
