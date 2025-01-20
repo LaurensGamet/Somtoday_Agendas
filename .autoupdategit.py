@@ -34,7 +34,7 @@ def update_git_repo():
         print(f"Git pull output:\n{pull_output}\n")
     
     # Stage all changes
-    run_git_command(["git", "add", "."])
+    run_git_command(["git", "add", "--ignore-errors", "."])
     
     # Check for changes to commit
     status_output = run_git_command(["git", "status", "--porcelain"])
@@ -46,7 +46,7 @@ def update_git_repo():
         commit_message = now.strftime("%H%M%d%m%Y")  # Format: HHMMDDMMYYYY
         
         # Commit changes
-        commit_output = run_git_command(["git", "commit", "-m", commit_message])
+        commit_output = run_git_command(["git", "commit", "--allow-empty", "-m", commit_message])
         if commit_output:
             print(f"Commit successful:\n{commit_output}\n")
         
@@ -73,6 +73,7 @@ class ChangeHandler(FileSystemEventHandler):
             if current_time - self.last_run >= 120:  # Ensure at least 1 minute between updates
                 print(f"Change detected in file: {event.src_path}")
                 self.last_run = current_time
+                time.sleep(15)
                 update_git_repo()
                 time.sleep(60)  # Wait for 1 minute and then recheck for changes
                 update_git_repo()
@@ -83,6 +84,7 @@ class ChangeHandler(FileSystemEventHandler):
             if current_time - self.last_run >= 120:  # Ensure at least 1 minute between updates
                 print(f"File created: {event.src_path}")
                 self.last_run = current_time
+                time.sleep(15)
                 update_git_repo()
                 time.sleep(60)  # Wait for 1 minute and then recheck for changes
                 update_git_repo()
