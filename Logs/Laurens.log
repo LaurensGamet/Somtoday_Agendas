@@ -3,3 +3,18 @@
 # Get in right directory
 
 # Commit local changes
+[main f8c22e0] 192020012025
+ 2 files changed, 5 insertions(+)
+ create mode 100644 Logs/Madelief.log
+
+# Get up to date
+error: cannot pull with rebase: You have unstaged changes.
+error: please commit or stash them.
+Error: Resolving conflicts
+fatal: No rebase in progress?
+
+# Run main file
+The file does not exist
+Done
+
+
