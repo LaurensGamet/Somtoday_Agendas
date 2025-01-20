@@ -9,8 +9,8 @@ cd /home/laurens/Somtoday_Agendas
 echo
 
 echo "# Get up to date"
-git add -A
-git commit -q -m "$current_datetime"
+git add -A --ignore-errors
+git commit -q --allow-empty -m  "$current_datetime"
 sudo git pull 
 
 echo
