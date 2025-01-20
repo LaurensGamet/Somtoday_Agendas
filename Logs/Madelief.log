@@ -25,3 +25,7 @@ Already up to date.
 # Get in right directory
 
 # Get up to date
+fatal: cannot lock ref 'HEAD': is at 528f6120c60490d934915c150d6100b5f797dd51 but expected 2a364f9cda142532b86f2a259de70bc84cbb6db8
+Already up to date.
+
+# Run main file
