@@ -17,7 +17,7 @@ echo
 
 echo "# Run main file"
 sudo python3 /home/laurens/Somtoday_Agendas/Madelief/main.py
-echo " Done"
+echo "Done"
 
 echo  
 echo
