@@ -3,8 +3,8 @@ import os
 import shutil
 
 # Give simpler names
-file1 = '4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics'
-file2 = 'Final-File.ics'
+file1 = '/home/laurens/Somtoday_Agendas/Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics'
+file2 = '/home/laurens/Somtoday_Agendas/Laurens/Final-File.ics'
 klas = 'oga3c'
 
 # Makes sure no duplicate files
