@@ -9,3 +9,17 @@ Already up to date.
 # Done
 
 
+19:53 20-01-2025
+
+# Get in right directory
+
+# Get up to date
+From github.com:LaurensGamet/Somtoday_Agendas
+   de85e43..cd2e97a  main       -> origin/main
+Updating de85e43..cd2e97a
+Fast-forward
+ Laurens/main.py  | 4 ++--
+ Madelief/main.py | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+# Run main file
