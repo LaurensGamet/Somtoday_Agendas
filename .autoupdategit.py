@@ -70,7 +70,7 @@ class ChangeHandler(FileSystemEventHandler):
     def on_modified(self, event):
         if not event.is_directory and not self.is_in_git_folder(event.src_path):  # Ignore changes in .git folder
             current_time = time.time()
-            if current_time - self.last_run >= 60:  # Ensure at least 1 minute between updates
+            if current_time - self.last_run >= 120:  # Ensure at least 1 minute between updates
                 print(f"Change detected in file: {event.src_path}")
                 self.last_run = current_time
                 update_git_repo()
@@ -80,7 +80,7 @@ class ChangeHandler(FileSystemEventHandler):
     def on_created(self, event):
         if not event.is_directory and not self.is_in_git_folder(event.src_path):  # Ignore creations in .git folder
             current_time = time.time()
-            if current_time - self.last_run >= 60:  # Ensure at least 1 minute between updates
+            if current_time - self.last_run >= 120:  # Ensure at least 1 minute between updates
                 print(f"File created: {event.src_path}")
                 self.last_run = current_time
                 update_git_repo()
