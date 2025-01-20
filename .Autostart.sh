@@ -16,4 +16,4 @@ tmux send-keys -t Somtoday_Agendas:0.3 "sudo python3 /home/laurens/Somtoday_Agen
 
 sleep 15
 
-sudo bash /home/laurens/Somtoday_Agendas/run-updater.sh
+sudo bash /home/laurens/Somtoday_Agendas/.run-updater.sh
