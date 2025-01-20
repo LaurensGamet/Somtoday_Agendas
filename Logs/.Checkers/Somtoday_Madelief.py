@@ -9,7 +9,7 @@ keywords = ["error", "failed", "exception", "fatal"]  # Keywords to detect
 slack_webhook = Incoming_Webhook_URL
 slack_message_template = {
         "username": "Somtoday Madelief",
-        "text": "Warning!\nThe latest log contained an error!\n<https://github.com/LaurensGamet/Somtoday_Agendas/blob/main/Logs/Madelief.log|Click here to view logs>",
+        "text": "Warning!\nThe latest log contained an error!\n<https://github.com/LaurensGamet/Somtoday_Agendas/blob/main/Logs|Click here to view logs>",
 	"icon_url": "http://188.90.170.38:8000/.Checkers/madelief.jpg"
 }
 
