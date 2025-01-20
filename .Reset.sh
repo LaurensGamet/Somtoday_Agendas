@@ -3,4 +3,4 @@ sudo rm /home/laurens/Somtoday_Agendas/Logs/Laurens.log /home/laurens/Somtoday_A
 sudo touch /home/laurens/Somtoday_Agendas/Logs/Laurens.log
 sudo touch /home/laurens/Somtoday_Agendas/Logs/Madelief.log
 
-sudo bash /home/laurens/Somtoday_Agendas/Logs/.LogChecker/Restart.sh
+sudo bash /home/laurens/Somtoday_Agendas/.Restart.sh
