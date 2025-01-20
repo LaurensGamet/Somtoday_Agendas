@@ -4,7 +4,7 @@ current_datetime=$(date +"%H%M%d%m%Y")
 echo $(date +"%H"":""%M"" ""%d""-""%m""-%Y")
 echo
 echo "# Get in right directory"
-cd /home/laurens/Somtoday_Agendas/Laurens
+cd /home/laurens/Somtoday_Agendas
 
 echo
 
