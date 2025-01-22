@@ -6,9 +6,9 @@ echo
 echo "# Get in right directory"
 cd /home/laurens/Somtoday_Agendas
 
-if [ -f "/home/laurens/Somtoday_Agendas/.git/index.lock" ]; then
-    sudo rm -f /home/laurens/Somtoday_Agendas/.git/index.lock
-fi
+sudo python3 /home/laurens/Somtoday_Agendas/.indexlockcheck.py
+
+sleep 5
 
 echo
 
