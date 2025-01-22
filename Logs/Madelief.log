@@ -564,3 +564,11 @@ Done
 # Get in right directory
 
 # Get up to date
+error: cannot lock ref 'refs/remotes/origin/main': is at 13c1b4f9e2b73ed971a21548536dcc682cac8613 but expected 3806cbb70e0a4066f439567816aac1df330825f6
+From github.com:LaurensGamet/Somtoday_Agendas
+ ! 3806cbb..13c1b4f  main       -> origin/main  (unable to update local ref)
+
+# Run main file
+Done
+
+
