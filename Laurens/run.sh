@@ -6,6 +6,11 @@ echo
 echo "# Get in right directory"
 cd /home/laurens/Somtoday_Agendas
 
+if [ -f "/home/laurens/Somtoday_Agendas/.git/index.lock" ]; then
+    echo "Removing stale lock file..."
+    sudo rm -f /home/laurens/Somtoday_Agendas/.git/index.lock
+fi
+
 echo
 
 echo "# Get up to date"
