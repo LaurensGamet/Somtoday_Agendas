@@ -40,8 +40,8 @@ def trigger_action():
 while True:
     if check_for_errors():
         trigger_action()  # Trigger action if error is found
-        # Wait for 15 minutes before checking again
-        time.sleep(15 * 60)
+        # Wait for 60 minutes before checking again
+        time.sleep(60 * 60)
     else:
         # If no error is found, check again after a shorter interval
         time.sleep(30)
