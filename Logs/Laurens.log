@@ -611,3 +611,8 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
   File "<frozen importlib._bootstrap>", line 535, in _init_module_attrs
 KeyboardInterrupt
+21:51 22-01-2025
+
+# Get in right directory
+
+# Get up to date
