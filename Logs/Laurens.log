@@ -591,3 +591,23 @@ Done
 # Get in right directory
 
 # Get up to date
+Already up to date.
+
+# Run main file
+Traceback (most recent call last):
+  File "/home/laurens/Somtoday_Agendas/Laurens/main.py", line 1, in <module>
+    import requests
+  File "/usr/lib/python3/dist-packages/requests/__init__.py", line 44, in <module>
+    import chardet
+  File "/usr/lib/python3/dist-packages/chardet/__init__.py", line 19, in <module>
+    from .universaldetector import UniversalDetector
+  File "/usr/lib/python3/dist-packages/chardet/universaldetector.py", line 43, in <module>
+    from .charsetgroupprober import CharSetGroupProber
+  File "/usr/lib/python3/dist-packages/chardet/charsetgroupprober.py", line 28, in <module>
+    from .enums import ProbingState
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 666, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 535, in _init_module_attrs
+KeyboardInterrupt
