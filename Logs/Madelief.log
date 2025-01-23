@@ -548,3 +548,9 @@ Already up to date.
 Done
 
 
+bash: warning: setlocale: LC_ALL: cannot change locale (nl_NL.UTF-8)
+00:30 24-01-2025
+
+# Get in right directory
+
+# Get up to date
