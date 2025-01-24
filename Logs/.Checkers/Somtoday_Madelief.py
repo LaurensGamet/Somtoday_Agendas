@@ -4,7 +4,7 @@ import requests
 from slackcredentials import Incoming_Webhook_URL
 
 log_file_path = '/home/laurens/Somtoday_Agendas/Logs/Madelief.log'
-keywords = ["error", "failed", "exception", "fatal"]  # Keywords to detect
+keywords = ["error", "failed", "exception", "fatal", "warning"]  # Keywords to detect
 
 slack_webhook = Incoming_Webhook_URL
 slack_message_template = {
