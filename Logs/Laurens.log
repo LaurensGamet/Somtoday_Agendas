@@ -329,11 +329,16 @@ Already up to date.
 Done
 
 
+<<<<<<< HEAD
 23:16 24-01-2025
+=======
+22:00 24-01-2025
+>>>>>>> d9f6dbb20f981b4102b777ca05152cf91fda841f
 
 # Get in right directory
 
 # Get up to date
+<<<<<<< HEAD
 fatal: could not parse HEAD
 error: refs/heads/main does not point to a valid object!
 error: refs/remotes/origin/main does not point to a valid object!
@@ -346,8 +351,33 @@ error: Your local changes to the following files would be overwritten by merge:
 Please commit your changes or stash them before you merge.
 Aborting
 Updating e1186f0..d9f6dbb
+=======
+Already up to date.
+>>>>>>> d9f6dbb20f981b4102b777ca05152cf91fda841f
 
 # Run main file
 Done
 
 
+<<<<<<< HEAD
+=======
+22:30 24-01-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Done
+
+
+23:00 24-01-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+>>>>>>> d9f6dbb20f981b4102b777ca05152cf91fda841f

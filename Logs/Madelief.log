@@ -329,8 +329,32 @@ Already up to date.
 Done
 
 
+<<<<<<< HEAD
 23:18 24-01-2025
+=======
+22:01 24-01-2025
+>>>>>>> d9f6dbb20f981b4102b777ca05152cf91fda841f
 
 # Get in right directory
 
 # Get up to date
+<<<<<<< HEAD
+=======
+Already up to date.
+
+# Run main file
+Done
+
+
+22:30 24-01-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Done
+
+
+>>>>>>> d9f6dbb20f981b4102b777ca05152cf91fda841f
