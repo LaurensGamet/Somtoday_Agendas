@@ -329,3 +329,25 @@ Already up to date.
 Done
 
 
+23:16 24-01-2025
+
+# Get in right directory
+
+# Get up to date
+fatal: could not parse HEAD
+error: refs/heads/main does not point to a valid object!
+error: refs/remotes/origin/main does not point to a valid object!
+error: refs/heads/main does not point to a valid object!
+error: refs/remotes/origin/main does not point to a valid object!
+From github.com:LaurensGamet/Somtoday_Agendas
+ * [new branch]      main       -> origin/main
+error: Your local changes to the following files would be overwritten by merge:
+	Logs/Laurens.log
+Please commit your changes or stash them before you merge.
+Aborting
+Updating e1186f0..d9f6dbb
+
+# Run main file
+Done
+
+
