@@ -3,12 +3,12 @@ import os
 import shutil
 import sys
 sys.path.append('/home/laurens/Somtoday_Agendas/')
-from Custom import Lokalen, Lessen
+from Custom import Lokalen, Lessen, klas1
 
 # Give simpler names
 file1 = '/home/laurens/Somtoday_Agendas/Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics'
 file2 = '/home/laurens/Somtoday_Agendas/Laurens/Final-File.ics'
-klas = 'oga3c'
+klas = klas1
 
 # Makes sure no duplicate files
 if os.path.exists(file2):

@@ -1,5 +1,5 @@
-from Laurens.main import klas as klas1
-from Madelief.main import klas as klas2
+klas1 = 'oga3c' # Laurens
+klas2 = 'oga3b' # Madelief
 
 
 Lokalen = [

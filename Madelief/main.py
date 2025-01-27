@@ -1,11 +1,14 @@
 import requests
 import os
 import shutil
+import sys
+sys.path.append('/home/laurens/Somtoday_Agendas/')
+from Custom import Lokalen, Lessen, klas2
 
 # Give simpler names
 file1 = '/home/laurens/Somtoday_Agendas/Madelief/c5490491-11eb-4aca-a8f1-ea3f58e75d54.ics'
 file2 = '/home/laurens/Somtoday_Agendas/Madelief/Final-File.ics'
-klas = 'oga3b'
+klas = klas2
 
 # Makes sure no duplicate files
 if os.path.exists(file2):
@@ -66,38 +69,7 @@ with open(file2, 'w') as file:
   file.write(filedata)
 
 # Define subject replacements
-subject_replacements = {
-    f'{klas}ak': 'Aardrijkskunde',
-    f'{klas}bl': 'Begeleidingslessen',
-    f'{klas}du': 'Duits',
-    f'{klas}ec': 'Economie',
-    f'{klas}en': 'Engels',
-    f'{klas}fa': 'Frans',
-    f'{klas}gs': 'Geschiedenis',
-    f'{klas}lo': 'Lichamelijke Opvoeding',
-    f'{klas}mentor': 'Mentor',
-    f'{klas}na': 'Natuurkunde',
-    f'{klas}ne': 'Nederlands',
-    f'{klas}o&o': 'Onderzoeken en Ontwerpen',
-    f'{klas}sk': 'Scheikunde',
-    f'{klas}wi': 'Wiskunde',
-    f'oga3.tmc1, oh3.tmc1': 'TMC',
-    f'oga3.tmc1\, oh3.tmc1' : 'TMC',
-    f'oh3.tmc1, oga3.tmc1': 'TMC',
-    f'oh3.tmc1\, oga3.tmc1' : 'TMC',
-    f'oga3.bl2' : 'Begeleidingslessen',
-    f'oga3.mentor2' : 'Mentor',
-    f'Les - en' : 'Engels',
-    f'Les - wi' : 'Wiskunde',
-    f'Les - fa' : 'Frans',
-    f'Les - ne' : 'Nederlands',
-    f'Les - ec' : 'Economie',
-    f'Les - sk' : 'Scheikunde',
-    f'Les - na' : 'Natuurkunde',
-    f'Les - gs' : 'Geschiedenis',
-    f'Les - du' : 'Duits',
-    f'Les - ak' : 'Aardrijkskunde',
-}
+subject_replacements = Lessen
 
 # Perform all replacements
 for old, new in subject_replacements.items():
@@ -124,20 +96,7 @@ for prefix, (start, end) in ranges.items():
         filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} - ", 'SUMMARY:')
 
 # Define specific replacements
-specific_replacements = [
-    "SUMMARY:beuk3_gym - ",
-    "SUMMARY:tm047_gym - ",
-    "SUMMARY:tm046_gym - ",
-    "SUMMARY:tm116_binask - ",
-    "SUMMARY:tm128_tmc - ",
-    "SUMMARY:tm145_o&o - ",
-    "SUMMARY:tm146_o&o - ",
-    "SUMMARY:cb012_gym - ",
-    "SUMMARY:tm116_binask\, tm115_binask - ",
-    "SUMMARY:tm034\, tm035 - ",
-    "SUMMARY:tm208\, tm214\, tm137\, tm215 - ",
-    "SUMMARY:tm208\, tm137\, tm214\, tm215 - ",
-]
+specific_replacements = Lokalen
 
 # Perform specific replacements
 for replacement in specific_replacements:
