@@ -2313,3 +2313,10 @@ Done
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Agendas
+   6a9568d8..22c0b091  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ Logs/Madelief.log | 9 ---------
+ 1 file changed, 9 deletions(-)
+
+# Run main file
