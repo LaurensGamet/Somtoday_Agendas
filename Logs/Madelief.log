@@ -2148,15 +2148,6 @@ Done
 # Get in right directory
 
 # Get up to date
-fatal: cannot lock ref 'HEAD': Unable to create '/home/laurens/Somtoday_Agendas/.git/HEAD.lock': File exists.
-
-Another git process seems to be running in this repository, e.g.
-an editor opened by 'git commit'. Please make sure all processes
-are terminated then try again. If it still fails, a git process
-may have crashed in this repository earlier:
-remove the file manually to continue.
-Auto packing the repository in background for optimum performance.
-See "git help gc" for manual housekeeping.
 Already up to date.
 
 # Run main file
