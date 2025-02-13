@@ -1249,3 +1249,12 @@ Done
 # Get in right directory
 
 # Get up to date
+Auto-merging Logs/Laurens.log
+Merge made by the 'recursive' strategy.
+ Logs/Laurens.log | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+# Run main file
+Done
+
+
