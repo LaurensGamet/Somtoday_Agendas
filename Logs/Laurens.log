@@ -1273,3 +1273,11 @@ Done
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Agendas
+   62915de5..baa68447  main       -> origin/main
+error: Your local changes to the following files would be overwritten by merge:
+	Logs/Laurens.log
+Please commit your changes or stash them before you merge.
+Aborting
+
+# Run main file
