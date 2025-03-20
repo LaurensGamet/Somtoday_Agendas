@@ -507,3 +507,10 @@ Done
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Agendas
+   b718f62a..50537fb3  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ Logs/Madelief.log | 3 ---
+ 1 file changed, 3 deletions(-)
+
+# Run main file
