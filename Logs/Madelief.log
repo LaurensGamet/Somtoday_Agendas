@@ -452,3 +452,12 @@ Done
 # Get in right directory
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 765096ee56afe4fa15df3b62d59bb5cc71f6e2c1.
+Already up to date.
+
+# Run main file
+Done
+
+
