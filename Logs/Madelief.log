@@ -3721,3 +3721,11 @@ Done
 # Get in right directory
 
 # Get up to date
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+Already up to date.
+
+# Run main file
+Done
+
+
