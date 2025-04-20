@@ -17,6 +17,8 @@ Lokalen = [
     "SUMMARY:tm208\, tm137\, tm214\, tm215 - ",
     "SUMMARY: - ",
     "SUMMARY:cb110_dvpr - ",
+    "SUMMARY:veld1 - ",
+    "SUMMARY:veld2 - ",
 ]
 
 Lessen = {
