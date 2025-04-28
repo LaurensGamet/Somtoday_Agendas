@@ -3331,3 +3331,9 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: '/home/laurens/Somtoday_Agendas/.git/index.lock'
 
 # Get up to date
+Already up to date.
+
+# Run main file
+Done
+
+
