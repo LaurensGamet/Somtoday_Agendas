@@ -1497,10 +1497,6 @@ Done
 20:00 01-05-2025
 
 # Get in right directory
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/.indexlockcheck.py", line 6, in <module>
-    os.remove(lock_file_path)
-FileNotFoundError: [Errno 2] No such file or directory: '/home/laurens/Somtoday_Agendas/.git/index.lock'
 
 # Get up to date
 Already up to date.
