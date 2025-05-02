@@ -5,3 +5,15 @@ No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothin
 No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
 
 # Get up to date
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+
+# Run main file
