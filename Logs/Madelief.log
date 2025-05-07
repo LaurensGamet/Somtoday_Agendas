@@ -677,3 +677,7 @@ Done
 02:00 07-05-2025
 
 # Get in right directory
+No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothing to remove.
+Removed head file: /home/laurens/Somtoday_Agendas/.git/HEAD.lock
+
+# Get up to date
