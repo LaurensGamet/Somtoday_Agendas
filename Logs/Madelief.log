@@ -1170,3 +1170,11 @@ Removed lock file: /home/laurens/Somtoday_Agendas/.git/index.lock
 No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
 
 # Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   849cbf8f9..170b31e19  main       -> origin/main
+Already up to date.
+
+# Run main file
+Done
+
+
