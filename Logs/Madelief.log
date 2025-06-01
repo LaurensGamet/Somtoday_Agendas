@@ -1959,3 +1959,10 @@ fatal: loose object 998b737ee4edce09038c8c1ab88ee9b5856d2a4e (stored in .git/obj
 Done
 
 
+22:00 01-06-2025
+
+# Get in right directory
+No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothing to remove.
+No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
+
+# Get up to date
