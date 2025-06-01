@@ -1776,6 +1776,7 @@ No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing
 Already up to date.
 
 # Run main file
+<<<<<<< HEAD
 Done
 
 
@@ -1977,3 +1978,5 @@ If you wish to set tracking information for this branch you can do so with:
 Done
 
 
+=======
+>>>>>>> 4b88971a33fd39193ded193c21cc14321e4009aa
