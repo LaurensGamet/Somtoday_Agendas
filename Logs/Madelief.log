@@ -345,3 +345,11 @@ No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothin
 No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
 
 # Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   c5a2cdecf..a06b45cbb  main       -> origin/main
+Already up to date.
+
+# Run main file
+Done
+
+
