@@ -111,3 +111,21 @@ No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothin
 No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
 
 # Get up to date
+fatal: Unable to create '/home/laurens/Somtoday_Agendas/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   f50456b27..dbc6a27e4  main       -> origin/main
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit f50456b270eb0a58f07552955ac7003177404b7b.
+Already up to date.
+
+# Run main file
+Done
+
+
