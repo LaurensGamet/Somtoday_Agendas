@@ -5,3 +5,18 @@ Removed lock file: /home/laurens/Somtoday_Agendas/.git/index.lock
 No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 78da6e064db471c6ea5ca2ca32aab4dce7ee2575.
+error: Your local changes to the following files would be overwritten by merge:
+	Logs/Laurens.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 78da6e064db471c6ea5ca2ca32aab4dce7ee2575
+output, run
+$ git reset --hard
+to recover.
+
+# Run main file
