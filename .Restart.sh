@@ -17,6 +17,8 @@ bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo test3
 # Wait a moment for tmux session to start
 sleep 1
 
+tmux ls
+
 # Send command to the session (adjust session name if needed)
 if tmux has-session -t Combined_View 2>/dev/null; then
     tmux send-keys -t Combined_View:0.0 "tmux attach -t Somtoday_Agendas" C-m
