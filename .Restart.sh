@@ -16,7 +16,7 @@ else
 fi
 
 # Start the session using Autostart
-#bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo "✅ Ran Autostart"
+bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo "✅ Ran Autostart"
 
 # Wait for tmux to initialize session
 sleep 1
