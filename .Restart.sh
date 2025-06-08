@@ -1,7 +1,25 @@
+#!/bin/bash
+
+whoami
 echo Test
 
-sudo -u www-data sudo tmux kill-session -t Somtoday_Agendas && echo test2
+# Kill old session if it exists
+tmux has-session -t Somtoday_Agendas 2>/dev/null
+if [ $? -eq 0 ]; then
+    tmux kill-session -t Somtoday_Agendas && echo test2
+else
+    echo "No existing Somtoday_Agendas session"
+fi
 
-sudo -u www-data sudo bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo test3
+# Start the session using .Autostart.sh
+bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo test3
 
-sudo -u www-data sudo tmux send-keys -t Combined_View:0.0 "sudo tmux a -t Somtoday_Agendas" C-m
+# Wait a moment for tmux session to start
+sleep 1
+
+# Send command to the session (adjust session name if needed)
+if tmux has-session -t Combined_View 2>/dev/null; then
+    tmux send-keys -t Combined_View:0.0 "tmux attach -t Somtoday_Agendas" C-m
+else
+    echo "⚠️ Session Combined_View not found."
+fi
