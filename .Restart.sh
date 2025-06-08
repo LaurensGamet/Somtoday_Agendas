@@ -1,28 +1,34 @@
 #!/bin/bash
 
-whoami
-echo Test
+# Define tmux socket path
+TMUX_SOCKET="/tmp/tmux-0/default"
 
-# Kill old session if it exists
-tmux has-session -t Somtoday_Agendas 2>/dev/null
+echo "Running as: $(whoami)"
+echo "Using TMUX socket: $TMUX_SOCKET"
+echo "Test"
+
+# Kill Somtoday_Agendas if it exists
+tmux -S "$TMUX_SOCKET" has-session -t Somtoday_Agendas 2>/dev/null
 if [ $? -eq 0 ]; then
-    tmux kill-session -t Somtoday_Agendas && echo test2
+    tmux -S "$TMUX_SOCKET" kill-session -t Somtoday_Agendas && echo "✅ Killed Somtoday_Agendas"
 else
-    echo "No existing Somtoday_Agendas session"
+    echo "ℹ️ No existing Somtoday_Agendas session"
 fi
 
-# Start the session using .Autostart.sh
-bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo test3
+# Start the session using Autostart
+bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo "✅ Ran Autostart"
 
-# Wait a moment for tmux session to start
+# Wait for tmux to initialize session
 sleep 1
 
-tmux -S /tmp/tmux-0/default ls
+# Show available sessions
+echo "🔍 Available tmux sessions:"
+tmux -S "$TMUX_SOCKET" ls
 
-
-# Send command to the session (adjust session name if needed)
-if tmux has-session -t Combined_View 2>/dev/null; then
-    tmux send-keys -t Combined_View:0.0 "tmux attach -t Somtoday_Agendas" C-m
+# Send command to Combined_View if it exists
+if tmux -S "$TMUX_SOCKET" has-session -t Combined_View 2>/dev/null; then
+    tmux -S "$TMUX_SOCKET" send-keys -t Combined_View:0.0 "tmux attach -t Somtoday_Agendas" C-m
+    echo "✅ Sent attach command to Combined_View"
 else
-    echo "⚠️ Session Combined_View not found."
+    echo "⚠️ Session Combined_View not found"
 fi
