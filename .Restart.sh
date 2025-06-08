@@ -17,7 +17,8 @@ bash /home/laurens/Somtoday_Agendas/.Autostart.sh && echo test3
 # Wait a moment for tmux session to start
 sleep 1
 
-sudo -u root tmux ls
+tmux -S /tmp/tmux-0/default ls
+
 
 # Send command to the session (adjust session name if needed)
 if tmux has-session -t Combined_View 2>/dev/null; then
