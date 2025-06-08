@@ -13,8 +13,9 @@ sleep 5
 echo
 
 echo "# Get up to date"
-git add -A --ignore-errors
-git commit -q --allow-empty -m  "$current_datetime"
+#sudo git add -A --ignore-errors
+#sudo git commit -q --allow-empty -m "$current_datetime"
+#sudo git push
 sudo git pull 
 
 echo
