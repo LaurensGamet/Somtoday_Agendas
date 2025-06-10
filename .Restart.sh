@@ -28,6 +28,7 @@ tmux -S "$TMUX_SOCKET" ls
 # Send command to Combined_View if it exists
 if tmux -S "$TMUX_SOCKET" has-session -t Combined_View 2>/dev/null; then
     tmux -S "$TMUX_SOCKET" send-keys -t Combined_View:0.0 "tmux attach -t Somtoday_Agendas" C-m
+    tmux -S "$TMUX_SOCKET" select-layout -t Discord_Bots:0 tiled
     echo "✅ Sent attach command to Combined_View"
 else
     echo "⚠️ Session Combined_View not found"
