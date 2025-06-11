@@ -12,3 +12,16 @@ The file does not exist
 Done
 
 
+21:30 11-06-2025
+
+# Get in right directory
+No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothing to remove.
+No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
+
+# Get up to date
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Could not resolve host: github.com
+
+# Run main file
+Done
+
+
