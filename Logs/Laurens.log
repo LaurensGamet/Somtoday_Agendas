@@ -771,3 +771,14 @@ Done
 # Get in right directory
 No lock file found at: /home/laurens/Somtoday_Agendas/.git/index.lock — nothing to remove.
 No head file found at: /home/laurens/Somtoday_Agendas/.git/HEAD.lock — nothing to remove.
+
+# Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 6b46b2203caa53e5e541ef7d3c814fb6168cc6ff.
+Already up to date.
+
+# Run main file
+Done
+
+
