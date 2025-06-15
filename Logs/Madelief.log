@@ -1,41 +1,5 @@
-15:12 15-06-2025
+15:20 15-06-2025
 
 # Get in right directory
 
 # Get up to date
-Already up to date.
-
-# Run main file
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 74, in <module>
-    for old, new in Custom.Lessen.items():
-NameError: name 'Custom' is not defined
-Done
-
-
-15:13 15-06-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 74, in <module>
-    for old, new in Custom.Lessen.items():
-NameError: name 'Custom' is not defined
-Done
-
-
-15:18 15-06-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
