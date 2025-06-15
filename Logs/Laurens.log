@@ -13,3 +13,18 @@ ModuleNotFoundError: No module named 'Custom'
 Done
 
 
+15:00 15-06-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Traceback (most recent call last):
+  File "/home/laurens/Somtoday_Agendas/Laurens/main.py", line 12, in <module>
+    from Custom import *
+ModuleNotFoundError: No module named 'Custom'
+Done
+
+
