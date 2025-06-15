@@ -10,7 +10,7 @@ tmux send-keys -t Somtoday_Agendas:0.0 "sudo python3 /home/laurens/Somtoday_Agen
 tmux send-keys -t Somtoday_Agendas:0.1 "sudo python3 /home/laurens/Somtoday_Agendas/Logs/.Checkers/Somtoday_Madelief.py" C-m 
 
 tmux send-keys -t Somtoday_Agendas:0.2 "cd /home/laurens/Somtoday_Agendas/Logs/" C-m
-tmux send-keys -t Somtoday_Agendas:0.2 "sudo python3 -m http.server" C-m
+tmux send-keys -t Somtoday_Agendas:0.2 "sudo python3 -m http.server 80" C-m
 
 tmux send-keys -t Somtoday_Agendas:0.3 "sudo python3 /home/laurens/Somtoday_Agendas/.autoupdategit.py" C-m
 
