@@ -9,7 +9,7 @@ sys.path.append('/home/laurens/Somtoday_Agendas/')
 file1 = '/home/laurens/Somtoday_Agendas/Madelief/c5490491-11eb-4aca-a8f1-ea3f58e75d54.ics'
 file2 = '/home/laurens/Somtoday_Agendas/Madelief/Final-File.ics'
 klas = 'oga3b'
-from Custom import *
+import Custom
 
 # Makes sure no duplicate files
 if os.path.exists(file2):
