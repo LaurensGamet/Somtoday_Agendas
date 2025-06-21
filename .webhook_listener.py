@@ -23,5 +23,10 @@ def autostart_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Autostart.sh"])
     return "Autostart script started", 200
 
+@app.route('/reboot', methods=['GET', 'POST'])
+def autostart_script():
+    subprocess.Popen(["sudo", "reboot now"])
+    return "Rebooting", 200
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
