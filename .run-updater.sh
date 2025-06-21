@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo python3 /home/laurens/Somtoday_Agendas/.indexlockcheck.py
 
 sleep 5
