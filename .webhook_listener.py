@@ -4,7 +4,7 @@ import subprocess
 
 app = Flask(__name__)
 
-@app.route('/webhook', methods=['GET', 'POST'])
+@app.route('/reset', methods=['GET', 'POST'])
 def webhook():
     # You can check headers or payload here if needed
     subprocess.Popen(["/home/laurens/Somtoday_Agendas/.Reset.sh"])
