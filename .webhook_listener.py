@@ -24,7 +24,7 @@ def autostart_script():
     return "Autostart script started", 200
 
 @app.route('/reboot', methods=['GET', 'POST'])
-def autostart_script():
+def reboot_script():
     subprocess.Popen(["sudo", "reboot now"])
     return "Rebooting", 200
 
