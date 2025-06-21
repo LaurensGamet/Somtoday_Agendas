@@ -1,3 +1,5 @@
+#!/bin/bash
+
 tmux new -d -s Somtoday_Agendas -n Laurens
 tmux split-window -h -t Somtoday_Agendas:0
 tmux split-window -v -t Somtoday_Agendas:0.0
