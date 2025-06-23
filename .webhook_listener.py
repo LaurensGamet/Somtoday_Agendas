@@ -1,56 +1,49 @@
-from flask import Flask, request, send_from_directory
+from flask import Flask, request
 from flask_socketio import SocketIO, emit
 import os, pty, select, subprocess
 
-app = Flask(__name__, static_url_path="", static_folder=".")
-socketio = SocketIO(app)
+app = Flask(__name__)
+socketio = SocketIO(app, cors_allowed_origins="*")  # allow connections from 8080
 
+# Your original redirect endpoints
+@app.route('/reset', methods=['GET', 'POST'])
+def reset_script():
+    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Reset.sh"])
+    return "Reset script started", 200
+
+@app.route('/restart', methods=['GET', 'POST'])
+def restart_script():
+    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Restart.sh"])
+    return "Restart script started", 200
+
+@app.route('/update', methods=['GET', 'POST'])
+def update_script():
+    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.run-updater.sh"])
+    return "Update script started", 200
+
+@app.route('/autostart', methods=['GET', 'POST'])
+def autostart_script():
+    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Autostart.sh"])
+    return "Autostart script started", 200
+
+@app.route('/reboot', methods=['GET', 'POST'])
+def reboot_script():
+    subprocess.Popen(["sudo", "reboot", "now"])
+    return "Rebooting", 200
+
+# === Terminal WebSocket logic ===
 VALID_USERNAME = "pi"
 VALID_PASSWORD = "raspberry"
 sessions = {}
 
-@app.route("/")
-def home():
-    return send_from_directory(".", "redirect_center.html")
-
-@app.route("/reset")
-def reset():
-    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Reset.sh"])
-    return "Reset started", 200
-
-@app.route("/restart")
-def restart():
-    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Restart.sh"])
-    return "Restart started", 200
-
-@app.route("/update")
-def update():
-    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.run-updater.sh"])
-    return "Update started", 200
-
-@app.route("/autostart")
-def autostart():
-    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Autostart.sh"])
-    return "Autostart started", 200
-
-@app.route("/reboot")
-def reboot():
-    subprocess.Popen(["sudo", "reboot", "now"])
-    return "Rebooting", 200
-
 @socketio.on("connect")
-def on_connect():
+def handle_connect():
     sid = request.sid
-    sessions[sid] = {
-        "stage": "login",
-        "username": "",
-        "fd": None,
-        "pid": None
-    }
+    sessions[sid] = {"stage": "login", "username": "", "fd": None, "pid": None}
     emit("pty_output", "raspberry login: ")
 
 @socketio.on("pty_input")
-def on_input(data):
+def handle_input(data):
     sid = request.sid
     session = sessions[sid]
 
@@ -75,22 +68,21 @@ def on_input(data):
         os.write(session["fd"], data.encode())
 
 @socketio.on("disconnect")
-def on_disconnect():
+def handle_disconnect():
     sid = request.sid
-    session = sessions.get(sid)
-    if session:
-        if session["fd"]:
-            os.close(session["fd"])
+    if sid in sessions:
+        if sessions[sid].get("fd"):
+            os.close(sessions[sid]["fd"])
         del sessions[sid]
 
-def stream_output():
+def stream_pty_output():
     while True:
-        for sid, sess in sessions.items():
-            if sess["stage"] == "authenticated" and sess["fd"]:
-                if select.select([sess["fd"]], [], [], 0)[0]:
-                    output = os.read(sess["fd"], 1024).decode(errors="ignore")
+        for sid, session in sessions.items():
+            if session["stage"] == "authenticated" and session["fd"]:
+                if select.select([session["fd"]], [], [], 0)[0]:
+                    output = os.read(session["fd"], 1024).decode(errors="ignore")
                     socketio.emit("pty_output", output, room=sid)
 
-if __name__ == "__main__":
-    socketio.start_background_task(stream_output)
-    socketio.run(app, host="0.0.0.0", port=5000)
+if __name__ == '__main__':
+    socketio.start_background_task(stream_pty_output)
+    socketio.run(app, host='0.0.0.0', port=5000)
