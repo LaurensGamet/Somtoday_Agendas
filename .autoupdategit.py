@@ -43,7 +43,7 @@ def update_git_repo():
         
         # Create commit message with the current date and time
         now = datetime.now()
-        commit_message = now.strftime("%H"&"."&"%M"&" "&"%d"&"-"&"%m%"&"-"Y")  # Format: HHMMDDMMYYYY
+        commit_message = now.strftime("%H.%M %d-%m-%Y")  # Format: HH.MM DD-MM-YYYY
         
         # Commit changes
         commit_output = run_git_command(["git", "commit", "--allow-empty", "-m", commit_message])
