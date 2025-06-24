@@ -84,7 +84,7 @@ class ChangeHandler(FileSystemEventHandler):
             if current_time - self.last_run >= 120:  # Ensure at least 1 minute between updates
                 print(f"File created: {event.src_path}")
                 self.last_run = current_time
-                time.sleep(30)
+                time.sleep(45)
                 update_git_repo()
                 time.sleep(60)  # Wait for 1 minute and then recheck for changes
                 update_git_repo()
