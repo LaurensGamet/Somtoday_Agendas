@@ -2,6 +2,7 @@ import requests
 import os
 import shutil
 import sys
+import Custom
 
 sys.path.append('/home/laurens/Somtoday_Agendas')
 
@@ -9,7 +10,6 @@ sys.path.append('/home/laurens/Somtoday_Agendas')
 file1 = '/home/laurens/Somtoday_Agendas/Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics'
 file2 = '/home/laurens/Somtoday_Agendas/Laurens/Final-File.ics'
 klas = 'oga3c'
-import Custom
 
 # Makes sure no duplicate files
 if os.path.exists(file2):
@@ -93,22 +93,6 @@ for prefix, (start, end) in ranges.items():
     for i in range(start, end + 1):
         formatted_number = f"{i:03d}" if prefix in ["be", "tm", "cb"] else f"{i:02d}"
         filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} - ", 'SUMMARY:')
-
-# Define specific replacements
-specific_replacements = [
-    "SUMMARY:beuk3_gym - ",
-    "SUMMARY:tm047_gym - ",
-    "SUMMARY:tm046_gym - ",
-    "SUMMARY:tm116_binask - ",
-    "SUMMARY:tm128_tmc - ",
-    "SUMMARY:tm145_o&o - ",
-    "SUMMARY:tm146_o&o - ",
-    "SUMMARY:cb012_gym - ",
-    "SUMMARY:tm116_binask\, tm115_binask - ",
-    "SUMMARY:tm034\, tm035 - ",
-    "SUMMARY:tm208\, tm214\, tm137\, tm215 - ",
-    "SUMMARY:tm208\, tm137\, tm214\, tm215 - ",
-]
 
 # Perform specific replacements
 for replacement in Custom.Lokalen:
