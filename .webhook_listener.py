@@ -14,7 +14,7 @@ def restart_script():
     return "Restart script started", 200
 
 @app.route('/updateagenda', methods=['GET', 'POST'])
-def update_script():
+def updateagenda_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.run-updater.sh"])
     return "Update script started", 200
 
@@ -29,7 +29,7 @@ def reboot_script():
     return "Rebooting", 200
 
 @app.route('/updaterepo', methods=['GET', 'POST'])
-def reboot_script():
+def updatelocalrepo_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.updatelocalrepo.sh"])
     return "Rebooting", 200
 
