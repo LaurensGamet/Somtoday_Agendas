@@ -1,5 +1,6 @@
 from flask import Flask, request
 import subprocess
+import shlex
 
 app = Flask(__name__)
 
@@ -32,6 +33,18 @@ def reboot_script():
 def updatelocalrepo_script():
     subprocess.Popen(["sudo", "bash", "/home/laurens/Somtoday_Agendas/.updatelocalrepo.sh"])
     return "Updating Local Repo", 200
+
+@app.route('/terminal', methods=['POST'])
+def terminal():
+    cmd = request.form.get('command')
+    if not cmd:
+        return "No command provided", 400
+    try:
+        command_list = shlex.split(cmd)
+        result = subprocess.check_output(command_list, stderr=subprocess.STDOUT, text=True)
+        return result, 200
+    except subprocess.CalledProcessError as e:
+        return e.output, 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
