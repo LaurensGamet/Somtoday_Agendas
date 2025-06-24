@@ -66,4 +66,5 @@ Lessen = {
     f'Les - gs' : 'Geschiedenis',
     f'Les - du' : 'Duits',
     f'Les - ak' : 'Aardrijkskunde',
+    f'Les - mentor' : 'Mentor',
 }
