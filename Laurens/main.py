@@ -2,9 +2,9 @@ import requests
 import os
 import shutil
 import sys
-import Custom
 
 sys.path.append('/home/laurens/Somtoday_Agendas')
+import Custom
 
 # Give simpler names
 file1 = '/home/laurens/Somtoday_Agendas/Laurens/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b.ics'
