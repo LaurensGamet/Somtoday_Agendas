@@ -30,8 +30,8 @@ def reboot_script():
 
 @app.route('/updaterepo', methods=['GET', 'POST'])
 def updatelocalrepo_script():
-    subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.updatelocalrepo.sh"])
-    return "Rebooting", 200
+    subprocess.Popen(["sudo", "bash", "/home/laurens/Somtoday_Agendas/.updatelocalrepo.sh"])
+    return "Updating Local Repo", 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
