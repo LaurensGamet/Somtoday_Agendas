@@ -80,7 +80,16 @@ def terminal(ws):
     if pid == 0:
         os.setgid(int(gid))
         os.setuid(int(uid))
+
+        # Set up basic environment
+        os.environ['HOME'] = f'/home/{username}'
+        os.environ['USER'] = username
+        os.environ['LOGNAME'] = username
+        os.environ['PATH'] = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+
+        os.chdir(os.environ['HOME'])  # Go to user's home dir
         os.execv('/bin/bash', ['/bin/bash'])
+
 
     def read_from_pty():
         while True:
