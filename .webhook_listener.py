@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from flask_sock import Sock
+import base64
 import subprocess
 import os
 import pty
@@ -9,110 +10,138 @@ import threading
 app = Flask(__name__)
 sock = Sock(app)
 
-# === ROUTES FOR BUTTONS ===
+# -------------------------
+# Basic HTTP endpoints
+# -------------------------
 
-@app.route('/api/reset', methods=['GET'])
-def reset():
+@app.route('/api/reset', methods=['GET', 'POST'])
+def reset_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Reset.sh"])
     return "Reset script started", 200
 
-@app.route('/api/restart', methods=['GET'])
-def restart():
+@app.route('/api/restart', methods=['GET', 'POST'])
+def restart_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Restart.sh"])
     return "Restart script started", 200
 
-@app.route('/api/updateagenda', methods=['GET'])
-def update_agenda():
+@app.route('/api/updateagenda', methods=['GET', 'POST'])
+def updateagenda_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.run-updater.sh"])
-    return "Update Agenda script started", 200
+    return "Update script started", 200
 
-@app.route('/api/autostart', methods=['GET'])
-def autostart():
+@app.route('/api/autostart', methods=['GET', 'POST'])
+def autostart_script():
     subprocess.Popen(["sudo", "/home/laurens/Somtoday_Agendas/.Autostart.sh"])
     return "Autostart script started", 200
 
-@app.route('/api/reboot', methods=['GET'])
-def reboot():
-    subprocess.Popen(["sudo", "reboot"])
-    return "Rebooting system...", 200
+@app.route('/api/reboot', methods=['GET', 'POST'])
+def reboot_script():
+    subprocess.Popen(["sudo", "reboot", "now"])
+    return "Rebooting", 200
 
-@app.route('/api/updaterepo', methods=['GET'])
-def update_repo():
+@app.route('/api/updaterepo', methods=['GET', 'POST'])
+def updatelocalrepo_script():
     subprocess.Popen(["sudo", "bash", "/home/laurens/Somtoday_Agendas/.updatelocalrepo.sh"])
-    return "Updating local repo...", 200
+    return "Updating Local Repo", 200
 
-# === RETURN USERNAME TO FRONTEND ===
+# -------------------------
+# Debug route (optional)
+# -------------------------
 
-@app.route('/api/whoami', methods=['GET'])
+@app.route('/api/debug')
+def debug():
+    # Only keep stringifiable environment keys and values
+    safe_env = {}
+    for k, v in request.environ.items():
+        try:
+            safe_env[k] = str(v)
+        except Exception:
+            safe_env[k] = "<unserializable>"
+    return jsonify(safe_env)
+
+@app.route("/api/whoami")
 def whoami():
-    auth = request.headers.get('Authorization')
-    if not auth or not auth.startswith('Basic '):
-        return 'Not authorized', 401
+    auth_header = request.headers.get("Authorization")
+    if not auth_header or not auth_header.startswith("Basic "):
+        return Response(
+            "❌ Not authorized. Please reload and login.\r\n",
+            status=401,
+            headers={"WWW-Authenticate": 'Basic realm="Login Required"'}
+        )
 
-    import base64
-    try:
-        encoded = auth.split(' ')[1]
-        decoded = base64.b64decode(encoded).decode('utf-8')
-        username = decoded.split(':')[0]
-        return jsonify({'username': username})
-    except Exception:
-        return 'Invalid auth', 400
-
-# === TERMINAL OVER WEBSOCKET ===
+    encoded = auth_header.split(" ")[1]
+    decoded = base64.b64decode(encoded).decode()
+    username = decoded.split(":")[0]
+    return jsonify({"username": username})
 
 @sock.route('/api/terminal')
 def terminal(ws):
-    username = request.args.get('user')
-    if not username:
-        ws.send("❌ No user provided")
-        ws.close()
+    user = request.args.get("user")
+    if not user:
+        ws.send("❌ No user provided.\n")
         return
 
+    import pwd
     try:
-        uid = subprocess.check_output(['id', '-u', username]).decode().strip()
-        gid = subprocess.check_output(['id', '-g', username]).decode().strip()
-    except subprocess.CalledProcessError:
-        ws.send(f"❌ User '{username}' not found")
-        ws.close()
+        user_info = pwd.getpwnam(user)
+        user_home = user_info.pw_dir
+        user_uid = user_info.pw_uid
+        user_shell = user_info.pw_shell or "/bin/bash"
+    except KeyError:
+        ws.send(f"❌ User '{user}' not found on system.\n")
         return
 
-    pid, fd = pty.fork()
-    if pid == 0:
-        os.setgid(int(gid))
-        os.setuid(int(uid))
-
-        # Set up basic environment
-        os.environ['HOME'] = f'/home/{username}'
-        os.environ['USER'] = username
-        os.environ['LOGNAME'] = username
-        os.environ['PATH'] = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-
-        os.chdir(os.environ['HOME'])  # Go to user's home dir
-        os.execv('/bin/bash', ['/bin/bash'])
-
-
-    def read_from_pty():
+    def read_pty(fd):
         while True:
             try:
-                data = os.read(fd, 1024)
-                if not data:
-                    break
-                ws.send(data.decode(errors='ignore'))
+                rlist, _, _ = select.select([fd], [], [], 0.1)
+                if fd in rlist:
+                    output = os.read(fd, 1024)
+                    if output:
+                        try:
+                            ws.send(output.decode(errors='ignore'))
+                        except:
+                            break
+                    else:
+                        break
             except Exception:
                 break
 
-    thread = threading.Thread(target=read_from_pty)
-    thread.daemon = True
-    thread.start()
+    def start_shell():
+        pid, fd = pty.fork()
+        if pid == 0:
+            # Child process
+            os.setuid(user_uid)
+            os.chdir(user_home)
+            os.environ["HOME"] = user_home
+            os.environ["USER"] = user
+            os.environ["LOGNAME"] = user
+            os.environ["SHELL"] = user_shell
+            os.environ["TERM"] = "xterm-256color"
+            os.environ["PATH"] = os.environ.get("PATH", "/usr/bin:/bin")
+            os.execvp(user_shell, [user_shell])
+        else:
+            # Parent process
+            threading.Thread(target=read_pty, args=(fd,), daemon=True).start()
 
-    while True:
-        try:
-            data = ws.receive()
-            if data is None:
-                break
-            os.write(fd, data.encode())
-        except Exception:
-            break
+            while True:
+                try:
+                    data = ws.receive()
+                    if data is None:
+                        break
+                    os.write(fd, data.encode())
+                except:
+                    break
+            try:
+                os.close(fd)
+            except:
+                pass
+
+    start_shell()
+
+def get_uid(username):
+    import pwd
+    return pwd.getpwnam(username).pw_uid
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
