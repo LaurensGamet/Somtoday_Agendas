@@ -143,5 +143,13 @@ def get_uid(username):
     import pwd
     return pwd.getpwnam(username).pw_uid
 
+@app.route("/api/logout")
+def logout():
+    return Response(
+        "Logged out",
+        401,
+        {'WWW-Authenticate': 'Basic realm="Login Required"'}
+    )
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
