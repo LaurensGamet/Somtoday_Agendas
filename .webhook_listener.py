@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, Response
+from flask import Flask, request, jsonify, Response, send_from_directory
 from flask_sock import Sock
 import base64
 import subprocess
@@ -7,8 +7,13 @@ import pty
 import select
 import threading
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="/var/www/html")
 sock = Sock(app)
+
+# Serve the main page
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
 
 # -------------------------
 # Basic HTTP endpoints
@@ -50,7 +55,6 @@ def updatelocalrepo_script():
 
 @app.route('/api/debug')
 def debug():
-    # Only keep stringifiable environment keys and values
     safe_env = {}
     for k, v in request.environ.items():
         try:
@@ -58,6 +62,10 @@ def debug():
         except Exception:
             safe_env[k] = "<unserializable>"
     return jsonify(safe_env)
+
+# -------------------------
+# Authenticated user info
+# -------------------------
 
 @app.route("/api/whoami")
 def whoami():
@@ -68,11 +76,14 @@ def whoami():
             status=401,
             headers={"WWW-Authenticate": 'Basic realm="Login Required"'}
         )
-
     encoded = auth_header.split(" ")[1]
     decoded = base64.b64decode(encoded).decode()
     username = decoded.split(":")[0]
     return jsonify({"username": username})
+
+# -------------------------
+# WebSocket Terminal
+# -------------------------
 
 @sock.route('/api/terminal')
 def terminal(ws):
@@ -142,14 +153,6 @@ def terminal(ws):
 def get_uid(username):
     import pwd
     return pwd.getpwnam(username).pw_uid
-
-@app.route("/api/logout")
-def logout():
-    return Response(
-        "Logged out",
-        401,
-        {'WWW-Authenticate': 'Basic realm="Login Required"'}
-    )
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
