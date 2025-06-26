@@ -977,3 +977,46 @@ Already up to date.
 Done
 
 
+16:59 26-06-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Done
+
+
+22:46 26-06-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site.py", line 606, in <module>
+    main()
+  File "/usr/lib/python3.9/site.py", line 593, in main
+    known_paths = addsitepackages(known_paths)
+  File "/usr/lib/python3.9/site.py", line 376, in addsitepackages
+    addsitedir(sitedir, known_paths)
+  File "/usr/lib/python3.9/site.py", line 214, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib/python3.9/site.py", line 175, in addpackage
+    exec(line)
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
+Done
+
+
+22:59 26-06-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
