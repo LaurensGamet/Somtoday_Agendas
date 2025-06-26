@@ -10,11 +10,6 @@ import threading
 app = Flask(__name__, static_folder="/var/www/html")
 sock = Sock(app)
 
-# Serve the main page
-@app.route('/')
-def index():
-    return send_from_directory(app.static_folder, 'index.html')
-
 # -------------------------
 # Basic HTTP endpoints
 # -------------------------
@@ -80,6 +75,11 @@ def whoami():
     decoded = base64.b64decode(encoded).decode()
     username = decoded.split(":")[0]
     return jsonify({"username": username})
+
+# Serve the main page
+@app.route('/')
+def index():
+    return send_from_directory('/var/www/html', 'index.html')
 
 # -------------------------
 # WebSocket Terminal
