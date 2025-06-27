@@ -162,79 +162,79 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250702T090000Z
 DTEND:20250702T123000Z
-SUMMARY:Les - Geen vak - ahj\, rim\, dub\, meb\, snr\, wid\, bob\, sar\, mom\, bas\, yit\, sch\, lum\, rom\, quk\, fre\, hod
+SUMMARY:Les - Geen vak - sar\, quk\, fre\, ahj\, bas\, lum\, yit\, rom\, sch\, hod\, rim\, snr\, bob\, mom\, dub\, wid\, meb
 UID:24332533358192@somtoday.nl
-SEQUENCE:4
+SEQUENCE:5
 X-WR-RELCALID:24332533358192@somtoday.nl
 TZID:Europe/Amsterdam
 LOCATION:
 COMMENT:Toets: Zwemmen Oud Gastel leerjaar 3
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250702T090000Z
 DTEND:20250702T123000Z
-SUMMARY:Les - Geen vak - ahj\, rim\, dub\, meb\, snr\, wid\, bob\, sar\, mom\, bas\, yit\, sch\, lum\, rom\, quk\, fre\, hod
+SUMMARY:Les - Geen vak - sar\, quk\, fre\, ahj\, bas\, lum\, yit\, rom\, sch\, hod\, rim\, snr\, bob\, mom\, dub\, wid\, meb
 UID:24332533358192@somtoday.nl
-SEQUENCE:4
+SEQUENCE:5
 X-WR-RELCALID:24332533358192@somtoday.nl
 TZID:Europe/Amsterdam
 LOCATION:
 COMMENT:Toets: Zwemmen Oud Gastel leerjaar 3
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250701T061500Z
 DTEND:20250701T093000Z
-SUMMARY:Les - Geen vak - osk\, lum\, man\, vij\, dub\, mef\, frv\, aar\, meb\, dok\, pel\, moc\, leefe\, stp\, ror\, mom...
+SUMMARY:Les - Geen vak - bas\, moc\, dok\, pel\, meb\, osk\, frv\, mef\, vij\, lum\, dub\, aar\, stp\, sed\, buc\, quk\, ...
 UID:24324213351557@somtoday.nl
-SEQUENCE:4
+SEQUENCE:5
 X-WR-RELCALID:24324213351557@somtoday.nl
 TZID:Europe/Amsterdam
 LOCATION:
 COMMENT:Toets: Femke Bol Games leerjaar 3 H_V
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250630T070000Z
 DTEND:20250630T120000Z
-SUMMARY:Les - Geen vak - kek\, bas\, buc\, wid\, lij\, buh\, bah\, ahj\, bej\, iki\, kls\, bat\, ven\, rod\, aar\, oosa\,...
+SUMMARY:Les - Geen vak - rod\, buc\, rim\, sed\, bum\, kls\, aar\, hav\, baf\, bah\, dub\, buh\, iki\, ven\, bat\, frv\, ...
 UID:24324213351524@somtoday.nl
-SEQUENCE:4
+SEQUENCE:5
 X-WR-RELCALID:24324213351524@somtoday.nl
 TZID:Europe/Amsterdam
 LOCATION:
 COMMENT:Toets: Match Day leerjaar 3
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250630T070000Z
 DTEND:20250630T120000Z
-SUMMARY:Les - Geen vak - kek\, bas\, buc\, wid\, lij\, buh\, bah\, ahj\, bej\, iki\, kls\, bat\, ven\, rod\, aar\, oosa\,...
+SUMMARY:Les - Geen vak - rod\, buc\, rim\, sed\, bum\, kls\, aar\, hav\, baf\, bah\, dub\, buh\, iki\, ven\, bat\, frv\, ...
 UID:24324213351524@somtoday.nl
-SEQUENCE:4
+SEQUENCE:5
 X-WR-RELCALID:24324213351524@somtoday.nl
 TZID:Europe/Amsterdam
 LOCATION:
 COMMENT:Toets: Match Day leerjaar 3
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250701T061500Z
 DTEND:20250701T093000Z
-SUMMARY:Les - Geen vak - osk\, lum\, man\, vij\, dub\, mef\, frv\, aar\, meb\, dok\, pel\, moc\, leefe\, stp\, ror\, mom...
+SUMMARY:Les - Geen vak - bas\, moc\, dok\, pel\, meb\, osk\, frv\, mef\, vij\, lum\, dub\, aar\, stp\, sed\, buc\, quk\, ...
 UID:24324213351557@somtoday.nl
-SEQUENCE:4
+SEQUENCE:5
 X-WR-RELCALID:24324213351557@somtoday.nl
 TZID:Europe/Amsterdam
 LOCATION:
 COMMENT:Toets: Femke Bol Games leerjaar 3 H_V
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250703T063000Z
 DTEND:20250703T133000Z
 SUMMARY:Mentor - mom
@@ -246,7 +246,7 @@ LOCATION:
 COMMENT:Toets: oga3 mentor_c
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250703T063000Z
 DTEND:20250703T133000Z
 SUMMARY:Mentor - mom
@@ -258,7 +258,7 @@ LOCATION:
 COMMENT:Toets: oga3 mentor_c
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250704T073000Z
 DTEND:20250704T080000Z
 SUMMARY:Mentor - mom
@@ -270,7 +270,7 @@ LOCATION:tm222
 COMMENT:Toets: oga3 mentor_rapport
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20250627T110017Z
+DTSTAMP:20250627T113017Z
 DTSTART:20250704T073000Z
 DTEND:20250704T080000Z
 SUMMARY:Mentor - mom
