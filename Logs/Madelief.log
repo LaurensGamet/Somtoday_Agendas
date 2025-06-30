@@ -1433,3 +1433,32 @@ Done
 # Get in right directory
 
 # Get up to date
+07:01 30-06-2025
+
+# Get in right directory
+
+# Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 4714d83f344564d7e386dd6373d47dede31f25ff.
+error: The following untracked working tree files would be removed by merge:
+	Laurens/Final-File.ics
+Please move or remove them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 4714d83f344564d7e386dd6373d47dede31f25ff
+output, run
+$ git reset --hard
+to recover.
+
+# Run main file
+Already up to date.
+
+# Run main file
+Done
+
+
+Done
+
+
