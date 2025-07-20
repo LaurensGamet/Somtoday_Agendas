@@ -3028,3 +3028,14 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
 requests.exceptions.ConnectionError: HTTPSConnectionPool(host='elo.somtoday.nl', port=443): Max retries exceeded with url: /services/webdav/calendarfeed/58405be0-5611-4aba-be66-9894a1009f12/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xb5f20250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Done
+
+
+16:23 20-07-2025
+
+# Get in right directory
+
+# Get up to date
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Could not resolve host: github.com
+
+# Run main file
