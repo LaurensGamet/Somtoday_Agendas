@@ -4123,3 +4123,11 @@ The file does not exist
 Done
 
 
+21:09 21-07-2025
+
+# Get in right directory
+
+# Get up to date
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Could not resolve host: github.com
+
+# Run main file
