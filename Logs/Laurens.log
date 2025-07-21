@@ -3582,3 +3582,9 @@ Done
 # Get in right directory
 
 # Get up to date
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Operation timed out after 300040 milliseconds with 0 out of 0 bytes received
+
+# Run main file
+Done
+
+
