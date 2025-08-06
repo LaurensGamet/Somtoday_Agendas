@@ -533,3 +533,33 @@ Done
 # Get in right directory
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 0a6b1d132b2ddfc16156dea1b6c51e986c180230.
+error: Your local changes to the following files would be overwritten by merge:
+	Logs/Laurens.log
+	Logs/Madelief.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 0a6b1d132b2ddfc16156dea1b6c51e986c180230
+output, run
+$ git reset --hard
+to recover.
+
+# Run main file
+18:01 06-08-2025
+
+# Get in right directory
+
+# Get up to date
+Done
+
+
+Already up to date.
+
+# Run main file
+Done
+
+
