@@ -886,3 +886,11 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='elo.somtoday.nl',
 Done
 
 
+06:45 12-08-2025
+
+# Get in right directory
+
+# Get up to date
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Could not resolve host: github.com
+
+# Run main file
