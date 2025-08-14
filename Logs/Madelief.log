@@ -307,3 +307,25 @@ fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/':
 # Get in right directory
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit eb6189cadecc9d368850ebffc9749811f8f61ca1.
+error: Your local changes to the following files would be overwritten by merge:
+	Logs/Laurens.log
+	Logs/Madelief.log
+Please commit your changes or stash them before you merge.
+error: The following untracked working tree files would be overwritten by merge:
+	Laurens/Final-File.ics
+Please move or remove them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff eb6189cadecc9d368850ebffc9749811f8f61ca1
+output, run
+$ git reset --hard
+to recover.
+
+# Run main file
+Done
+
+
