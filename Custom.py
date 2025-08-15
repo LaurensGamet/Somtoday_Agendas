@@ -34,6 +34,8 @@ Lessen = {
     f'{klas1}entl': 'Engels',
     f'{klas3}.fatl1': 'Frans',
     f'{klas1}lo': 'Lichamelijke Opvoeding',
+    f'oga4.kua1\, oga5.kua1': 'Kunstgeschiedenis',
+    
     f'{klas1}maat': 'Maatschappijleer',
     f'{klas3}.mentor1': 'Mentor',
     f'{klas3}.mentor3': 'Mentor',
