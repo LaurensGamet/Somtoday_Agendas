@@ -25,6 +25,7 @@ Lokalen = [
 
 Lessen = {
     f'{klas3}.bl1': 'Begeleidingslessen',
+    f'{klas3}.bl3': 'Begeleidingslessen',
     f'{klas3}.biol1': 'Biologie',
     f'{klas3}.ckvnieuw1': 'Culturele en Kunstzinnige Vorming',
     f'{klas3}.ckvnieuw2': 'Culturele en Kunstzinnige Vorming',
@@ -35,6 +36,7 @@ Lessen = {
     f'{klas1}lo': 'Lichamelijke Opvoeding',
     f'{klas1}maat': 'Maatschappijleer',
     f'{klas3}.mentor1': 'Mentor',
+    f'{klas3}.mentor3': 'Mentor',
     f'{klas3}.nat1': 'Natuurkunde',
     f'{klas1}netl': 'Nederlands',
     f'oga4.o&o1\, oga6.o&o1\, oga5.o&o1': 'Onderzoeken en Ontwerpen',
