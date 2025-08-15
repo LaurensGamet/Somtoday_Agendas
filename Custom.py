@@ -35,7 +35,7 @@ Lessen = {
     f'{klas1}gs': 'Geschiedenis',
     f'{klas1}lo': 'Lichamelijke Opvoeding',
     f'{klas3}maat': 'Maatschappijleer',
-    f'{klas1}mentor': 'Mentor',
+    f'{klas3}.mentor1': 'Mentor',
     f'{klas1}na': 'Natuurkunde',
     f'{klas1}ne': 'Nederlands',
     f'oga4.o&o1\, oga6.o&o1\, oga5.o&o1': 'Onderzoeken en Ontwerpen',
