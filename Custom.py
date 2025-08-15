@@ -34,7 +34,7 @@ Lessen = {
     f'{klas1}fa': 'Frans',
     f'{klas1}gs': 'Geschiedenis',
     f'{klas1}lo': 'Lichamelijke Opvoeding',
-    f'{klas3}maat': 'Maatschappijleer',
+    f'{klas1}maat': 'Maatschappijleer',
     f'{klas3}.mentor1': 'Mentor',
     f'{klas1}na': 'Natuurkunde',
     f'{klas1}ne': 'Nederlands',
