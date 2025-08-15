@@ -30,6 +30,7 @@ Lessen = {
     f'{klas3}.dutl1': 'Duits',
     f'{klas3}.econ1': 'Economie',
     f'{klas1}entl': 'Engels',
+    f'{klas3}.fatl1': 'Frans',
     f'{klas1}lo': 'Lichamelijke Opvoeding',
     f'{klas1}maat': 'Maatschappijleer',
     f'{klas3}.mentor1': 'Mentor',
