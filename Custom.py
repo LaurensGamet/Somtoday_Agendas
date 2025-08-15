@@ -1,5 +1,5 @@
-klas1 = 'oga3c' # Laurens
-klas2 = 'oga3b' # Madelief
+klas1 = 'oga4b' # Laurens
+klas2 = 'oga4b' # Madelief
 
 
 Lokalen = [
