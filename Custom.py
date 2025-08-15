@@ -20,6 +20,7 @@ Lokalen = [
     "SUMMARY:cb110_dvpr - ",
     "SUMMARY:veld1 - ",
     "SUMMARY:veld2 - ",
+    "SUMMARY:tm018_muziek - ",
 ]
 
 Lessen = {
