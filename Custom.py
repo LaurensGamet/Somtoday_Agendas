@@ -37,7 +37,7 @@ Lessen = {
     f'{klas1}ne': 'Nederlands',
     f'oga4.o&o1\, oga6.o&o1\, oga5.o&o1': 'Onderzoeken en Ontwerpen',
     f'{klas3}.schk1': 'Scheikunde',
-    f'{klas1}wi': 'Wiskunde',
+    f'{klas3}.wisa1': 'Wiskunde',
     f'{klas2}ak': 'Aardrijkskunde',
     f'{klas2}bl': 'Begeleidingslessen',
     f'{klas2}du': 'Duits',
