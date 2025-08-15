@@ -26,6 +26,7 @@ Lokalen = [
 Lessen = {
     f'{klas1}ak': 'Aardrijkskunde',
     f'{klas1}bl': 'Begeleidingslessen',
+    f'{klas3}.ckvnieuw2': 'Culturele en Kunstzinnige Vorming',
     f'{klas3}.dutl1': 'Duits',
     f'{klas3}.econ1': 'Economie',
     f'{klas1}en': 'Engels',
