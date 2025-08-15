@@ -412,3 +412,18 @@ fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/':
 fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Could not resolve host: github.com
 
 # Run main file
+23:07 15-08-2025
+
+# Get in right directory
+
+# Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 92a2048939b0f34acbde8a67c81fde73024c7dec.
+Already up to date.
+
+# Run main file
+The file does not exist
+Done
+
+
