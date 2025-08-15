@@ -29,6 +29,7 @@ Lessen = {
     f'{klas3}.ckvnieuw2': 'Culturele en Kunstzinnige Vorming',
     f'{klas3}.dutl1': 'Duits',
     f'{klas3}.econ1': 'Economie',
+    f'{klas1}entl': 'Engels',
     f'{klas1}lo': 'Lichamelijke Opvoeding',
     f'{klas1}maat': 'Maatschappijleer',
     f'{klas3}.mentor1': 'Mentor',
