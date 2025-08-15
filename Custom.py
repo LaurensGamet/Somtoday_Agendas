@@ -26,7 +26,7 @@ Lessen = {
     f'{klas1}ak': 'Aardrijkskunde',
     f'{klas1}bl': 'Begeleidingslessen',
     f'{klas1}du': 'Duits',
-    f'{klas1}ec': 'Economie',
+    f'{klas3}.econ1': 'Economie',
     f'{klas1}en': 'Engels',
     f'{klas1}fa': 'Frans',
     f'{klas1}gs': 'Geschiedenis',
