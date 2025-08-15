@@ -40,6 +40,7 @@ Lessen = {
     f'oga4.o&o1\, oga5.o&o1\, oga6.o&o1': 'Onderzoeken en Ontwerpen',
     f'{klas3}.schk1': 'Scheikunde',
     f'{klas3}.wisa1': 'Wiskunde',
+    f'{klas3}.wisb2': 'Wiskunde',
     f'Les - en' : 'Engels',
     f'Les - wi' : 'Wiskunde',
     f'Les - fa' : 'Frans',
