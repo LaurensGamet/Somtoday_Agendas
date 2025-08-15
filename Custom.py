@@ -1,5 +1,6 @@
 klas1 = 'oga4b' # Laurens
 klas2 = 'oga4b' # Madelief
+klas3 = 'oga4' # Allebei
 
 
 Lokalen = [
@@ -34,7 +35,7 @@ Lessen = {
     f'{klas1}na': 'Natuurkunde',
     f'{klas1}ne': 'Nederlands',
     f'{klas1}o&o': 'Onderzoeken en Ontwerpen',
-    f'{klas1}sk': 'Scheikunde',
+    f'{klas3}.schk1': 'Scheikunde',
     f'{klas1}wi': 'Wiskunde',
     f'{klas2}ak': 'Aardrijkskunde',
     f'{klas2}bl': 'Begeleidingslessen',
