@@ -34,7 +34,7 @@ Lessen = {
     f'{klas1}mentor': 'Mentor',
     f'{klas1}na': 'Natuurkunde',
     f'{klas1}ne': 'Nederlands',
-    f'{klas1}o&o': 'Onderzoeken en Ontwerpen',
+    f'oga4.o&o1\, oga6.o&o1\, oga5.o&o1': 'Onderzoeken en Ontwerpen',
     f'{klas3}.schk1': 'Scheikunde',
     f'{klas1}wi': 'Wiskunde',
     f'{klas2}ak': 'Aardrijkskunde',
