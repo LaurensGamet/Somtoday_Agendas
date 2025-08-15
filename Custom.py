@@ -21,6 +21,7 @@ Lokalen = [
     "SUMMARY:veld1 - ",
     "SUMMARY:veld2 - ",
     "SUMMARY:tm018_muziek - ",
+    "SUMMARY:tm222\, tm223\, tm224 - "
 ]
 
 Lessen = {
