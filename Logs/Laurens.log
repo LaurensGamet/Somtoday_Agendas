@@ -265,3 +265,19 @@ Fast-forward
 Done
 
 
+23:50 18-08-2025
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   212d3d16..1de45a13  main       -> origin/main
+Updating 212d3d16..1de45a13
+Fast-forward
+ Custom.py | 36 ++++++++++++++++++------------------
+ 1 file changed, 18 insertions(+), 18 deletions(-)
+
+# Run main file
+Done
+
+
