@@ -96,7 +96,7 @@ for prefix, (start, end) in ranges.items():
 
 # Perform specific replacements
 for replacement in Custom.Lokalen:
-    filedata = filedata.replace(replacement, 'SUMMARY:')
+    filedata = filedata.replace(f'SUMMARY:{replacement} - ', 'SUMMARY:')
 
 # Write the modified data back to the file
 with open(file2, 'w') as file:
