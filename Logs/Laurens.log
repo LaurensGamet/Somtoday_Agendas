@@ -572,3 +572,16 @@ to recover.
 Done
 
 
+00:37 20-08-2025
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   028ad26b..9deb3a65  main       -> origin/main
+Updating 028ad26b..9deb3a65
+Fast-forward
+ Custom.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+# Run main file
