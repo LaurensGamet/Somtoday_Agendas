@@ -553,3 +553,22 @@ Done
 # Get in right directory
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 3ed21282189c6b7718c78a2097ce291ffbbfc414.
+error: Your local changes to the following files would be overwritten by merge:
+	Custom.py
+	Logs/Laurens.log
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 3ed21282189c6b7718c78a2097ce291ffbbfc414
+output, run
+$ git reset --hard
+to recover.
+
+# Run main file
+Done
+
+
