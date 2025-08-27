@@ -569,3 +569,23 @@ Fast-forward
 Done
 
 
+23:09 27-08-2025
+
+# Get in right directory
+
+# Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit 20e83c2c3d63b3d3c81d055c9c3b439bb392cdcf.
+error: Your local changes to the following files would be overwritten by merge:
+	Custom.py
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Cannot fast-forward your working tree.
+After making sure that you saved anything precious from
+$ git diff 20e83c2c3d63b3d3c81d055c9c3b439bb392cdcf
+output, run
+$ git reset --hard
+to recover.
+
+# Run main file
