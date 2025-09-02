@@ -63,6 +63,7 @@ Lessen = {
     f'oh4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
     f'oga4.kumu1\, oga5.kumu1\, oh4.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
     f'oga5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+    f'oga5.kumu1\, oh5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
     f'{klas1}maat': 'Maatschappijleer',
     f'{klas3}.mentor1': 'Mentor',
     f'{klas3}.mentor3': 'Mentor',
