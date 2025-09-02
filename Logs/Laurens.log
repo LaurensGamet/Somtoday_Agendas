@@ -135,3 +135,12 @@ Done
 # Get in right directory
 
 # Get up to date
+warning: fetch updated the current branch head.
+fast-forwarding your working tree from
+commit e961e0d115b1b14e40d32dce380f75ac38682a2f.
+Already up to date.
+
+# Run main file
+Done
+
+
