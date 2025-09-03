@@ -174,3 +174,19 @@ Already up to date.
 Done
 
 
+22:53 03-09-2025
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   9ee006a6..c13b7206  main       -> origin/main
+Updating 9ee006a6..c13b7206
+Fast-forward
+ Custom.py | 130 +++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 112 insertions(+), 18 deletions(-)
+
+# Run main file
+Done
+
+
