@@ -1133,3 +1133,28 @@ Already up to date.
 Done
 
 
+21:13 08-09-2025
+
+# Get in right directory
+
+# Get up to date
+fatal: detected dubious ownership in repository at '/home/laurens/Somtoday_Agendas'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/laurens/Somtoday_Agendas
+
+# Run main file
+Done
+
+
+21:25 08-09-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Done
+
+
