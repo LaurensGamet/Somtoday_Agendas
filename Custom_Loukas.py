@@ -1,0 +1,15 @@
+Lessen = {
+    f'entl v4.entl1': 'Engels',
+    f'schk v4.schk3': 'Scheikunde',
+    f'maw v4.maw1':  'Maatschappijwetenschappen',
+    f'netl v4.netl1': 'Nederlands',
+    f'wisb v4.wisb2': 'Wiskunde',
+    f'ozl v4.aozl': 'Onderzoekend leren',
+    f'biol v4.biol1': 'Biologie',
+    f'nat v4.nat1': 'Natuurkunde',
+    f'gtc ltc v4.ltc1 v4.gtc1': 'Grieks en Latijn',
+    f'gltc v4.gltc1' : 'Grieks en Latijn',
+    f'maat v4.maat2': 'Maatschappijleer',
+    f'toets v4a v4c v4b v4e v4d': 'Toets',
+    f'lo v4.lo1': 'Lichamelijke Opvoeding',
+}
