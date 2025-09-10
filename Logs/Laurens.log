@@ -914,3 +914,35 @@ Already up to date.
 Done
 
 
+09:05 10-09-2025
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   ad5e8804..1c1f01e2  main       -> origin/main
+Updating ad5e8804..1c1f01e2
+Fast-forward
+ .Autostart.sh                         |   2 +
+ .Reset.sh                             |   3 +-
+ .gitignore.save.1                     |   0
+ .run-updater.sh                       |   4 ++
+ Custom_Loukas.py                      |  15 ++++
+ Logs/.Checkers/Somtoday_Laurens.py    |   2 +-
+ Logs/.Checkers/Somtoday_Loukas.py     |  47 +++++++++++++
+ Logs/.Checkers/Somtoday_Madelief.py   |   2 +-
+ .gitignore.save => Loukas/__init__.py |   0
+ Loukas/main.py                        | 124 ++++++++++++++++++++++++++++++++++
+ Loukas/run.sh                         |  27 ++++++++
+ 11 files changed, 223 insertions(+), 3 deletions(-)
+ delete mode 100644 .gitignore.save.1
+ create mode 100644 Custom_Loukas.py
+ create mode 100644 Logs/.Checkers/Somtoday_Loukas.py
+ rename .gitignore.save => Loukas/__init__.py (100%)
+ create mode 100644 Loukas/main.py
+ create mode 100644 Loukas/run.sh
+
+# Run main file
+Done
+
+
