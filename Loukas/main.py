@@ -19,10 +19,10 @@ volgende_week_datum = vandaag + timedelta(weeks=1)
 jaar_volgende, week_volgende, _ = volgende_week_datum.isocalendar()
 
 # Alles samenplakken
-resultaat = f"{jaar}{week:02d}{week_volgende:02d}"
+resultaat = f"{jaar}{week:02d}-{jaar}{week_volgende:02d}"
 
 # Give simpler names
-file1 = f'/home/laurens/Somtoday_Agendas/Loukas/{resultaat}'
+file1 = f'/home/laurens/Somtoday_Agendas/Loukas/rooster-{resultaat}.txt'
 file2 = '/home/laurens/Somtoday_Agendas/Loukas/Final-File.ics'
 
 # Makes sure no duplicate files
