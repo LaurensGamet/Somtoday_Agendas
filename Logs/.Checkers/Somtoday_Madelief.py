@@ -10,7 +10,7 @@ slack_webhook = Incoming_Webhook_URL
 slack_message_template = {
         "username": "Somtoday Madelief",
         "text": "Warning!\nThe latest log contained an error!\n<https://github.com/LaurensGamet/Somtoday_Agendas/blob/main/Logs|Click here to view logs>",
-	"icon_url": "http://100.101.67.217:8080/.Checkers/madelief.jpg"
+	    "icon_url": "http://141.224.230.177:8080/.Checkers/madelief.jpg"
 }
 
 def check_for_errors():

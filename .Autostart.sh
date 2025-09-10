@@ -16,6 +16,8 @@ tmux send-keys -t Somtoday_Agendas:0.2 "sudo python3 -m http.server 8080" C-m
 
 tmux send-keys -t Somtoday_Agendas:0.3 "sudo python3 /home/laurens/Somtoday_Agendas/.autoupdategit.py" C-m
 
+sudo python3 /home/laurens/Somtoday_Agendas/Logs/.Checkers/Somtoday_Loukas.py
+
 sleep 15
 
 sudo bash /home/laurens/Somtoday_Agendas/.run-updater.sh

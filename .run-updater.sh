@@ -9,3 +9,7 @@ sudo bash /home/laurens/Somtoday_Agendas/Laurens/run.sh >> /home/laurens/Somtoda
 sleep 10
 
 sudo bash /home/laurens/Somtoday_Agendas/Madelief/run.sh >> /home/laurens/Somtoday_Agendas/Logs/Madelief.log 2>&1
+
+sleep 10
+
+sudo bash /home/laurens/Somtoday_Agendas/Loukas/run.sh >> /home/laurens/Somtoday_Agendas/Logs/Loukas.log 2>&1
