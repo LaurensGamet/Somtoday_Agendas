@@ -22,6 +22,7 @@ Lokalen = [
     "tm018_muziek",
     "tm222\, tm223\, tm224",
     "ut006",
+    "tm115_binask",
 ]
 
 Lessen = {
