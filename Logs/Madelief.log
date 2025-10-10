@@ -1,4 +1,4 @@
-22:36 08-09-2025
+00:15 07-10-2025
 
 # Get in right directory
 
@@ -9,7 +9,7 @@ Already up to date.
 Done
 
 
-23:20 08-09-2025
+00:30 07-10-2025
 
 # Get in right directory
 
@@ -20,7 +20,7 @@ Already up to date.
 Done
 
 
-23:30 08-09-2025
+01:00 07-10-2025
 
 # Get in right directory
 
@@ -31,7 +31,7 @@ Already up to date.
 Done
 
 
-00:00 09-09-2025
+01:30 07-10-2025
 
 # Get in right directory
 
@@ -42,7 +42,7 @@ Already up to date.
 Done
 
 
-00:30 09-09-2025
+02:00 07-10-2025
 
 # Get in right directory
 
@@ -53,7 +53,7 @@ Already up to date.
 Done
 
 
-01:00 09-09-2025
+02:30 07-10-2025
 
 # Get in right directory
 
@@ -64,7 +64,7 @@ Already up to date.
 Done
 
 
-01:30 09-09-2025
+03:00 07-10-2025
 
 # Get in right directory
 
@@ -75,7 +75,7 @@ Already up to date.
 Done
 
 
-02:00 09-09-2025
+03:30 07-10-2025
 
 # Get in right directory
 
@@ -86,7 +86,7 @@ Already up to date.
 Done
 
 
-02:30 09-09-2025
+04:00 07-10-2025
 
 # Get in right directory
 
@@ -97,7 +97,7 @@ Already up to date.
 Done
 
 
-03:00 09-09-2025
+04:30 07-10-2025
 
 # Get in right directory
 
@@ -108,7 +108,7 @@ Already up to date.
 Done
 
 
-03:30 09-09-2025
+05:00 07-10-2025
 
 # Get in right directory
 
@@ -119,7 +119,7 @@ Already up to date.
 Done
 
 
-04:00 09-09-2025
+05:30 07-10-2025
 
 # Get in right directory
 
@@ -130,7 +130,7 @@ Already up to date.
 Done
 
 
-04:30 09-09-2025
+06:00 07-10-2025
 
 # Get in right directory
 
@@ -141,7 +141,7 @@ Already up to date.
 Done
 
 
-05:00 09-09-2025
+06:30 07-10-2025
 
 # Get in right directory
 
@@ -152,7 +152,7 @@ Already up to date.
 Done
 
 
-05:30 09-09-2025
+07:00 07-10-2025
 
 # Get in right directory
 
@@ -163,7 +163,7 @@ Already up to date.
 Done
 
 
-06:00 09-09-2025
+07:30 07-10-2025
 
 # Get in right directory
 
@@ -174,7 +174,7 @@ Already up to date.
 Done
 
 
-06:30 09-09-2025
+08:00 07-10-2025
 
 # Get in right directory
 
@@ -185,7 +185,7 @@ Already up to date.
 Done
 
 
-07:00 09-09-2025
+08:30 07-10-2025
 
 # Get in right directory
 
@@ -196,7 +196,7 @@ Already up to date.
 Done
 
 
-07:30 09-09-2025
+09:00 07-10-2025
 
 # Get in right directory
 
@@ -207,7 +207,7 @@ Already up to date.
 Done
 
 
-08:00 09-09-2025
+09:30 07-10-2025
 
 # Get in right directory
 
@@ -218,7 +218,7 @@ Already up to date.
 Done
 
 
-08:30 09-09-2025
+10:00 07-10-2025
 
 # Get in right directory
 
@@ -229,7 +229,7 @@ Already up to date.
 Done
 
 
-09:00 09-09-2025
+10:30 07-10-2025
 
 # Get in right directory
 
@@ -240,7 +240,7 @@ Already up to date.
 Done
 
 
-09:30 09-09-2025
+11:00 07-10-2025
 
 # Get in right directory
 
@@ -251,7 +251,7 @@ Already up to date.
 Done
 
 
-10:00 09-09-2025
+11:30 07-10-2025
 
 # Get in right directory
 
@@ -262,4140 +262,18 @@ Already up to date.
 Done
 
 
-10:30 09-09-2025
+12:00 07-10-2025
 
 # Get in right directory
 
 # Get up to date
-fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas/': Could not resolve host: github.com
-
-# Run main file
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
-    conn = connection.create_connection(
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
-    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 666, in urlopen
-    httplib_response = self._make_request(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 377, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1001, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7fabfd2379a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 720, in urlopen
-    retries = retries.increment(
-  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 438, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fabfd2379a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 22, in <module>
-    r = requests.get(url, allow_redirects=True)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fabfd2379a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Done
-
-
-11:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas/': Could not resolve host: github.com
-
-# Run main file
-The file does not exist
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
-    conn = connection.create_connection(
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
-    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 666, in urlopen
-    httplib_response = self._make_request(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 377, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1001, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f48911979a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 720, in urlopen
-    retries = retries.increment(
-  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 438, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f48911979a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 22, in <module>
-    r = requests.get(url, allow_redirects=True)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f48911979a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Done
-
-
-11:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas/': Could not resolve host: github.com
-
-# Run main file
-The file does not exist
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
-    conn = connection.create_connection(
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
-    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 666, in urlopen
-    httplib_response = self._make_request(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 377, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1001, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f42315589a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 720, in urlopen
-    retries = retries.increment(
-  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 438, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f42315589a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 22, in <module>
-    r = requests.get(url, allow_redirects=True)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f42315589a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Done
-
-
-12:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas/': Could not resolve host: github.com
-
-# Run main file
-The file does not exist
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
-    conn = connection.create_connection(
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
-    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 666, in urlopen
-    httplib_response = self._make_request(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 377, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1001, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f201edc19a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 720, in urlopen
-    retries = retries.increment(
-  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 438, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f201edc19a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 22, in <module>
-    r = requests.get(url, allow_redirects=True)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f201edc19a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Done
-
-
-12:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas/': Could not resolve host: github.com
-
-# Run main file
-The file does not exist
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
-    conn = connection.create_connection(
-  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
-    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 666, in urlopen
-    httplib_response = self._make_request(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 377, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 1001, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
-    conn = self._new_conn()
-  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f0d967619a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 720, in urlopen
-    retries = retries.increment(
-  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 438, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f0d967619a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/laurens/Somtoday_Agendas/Madelief/main.py", line 22, in <module>
-    r = requests.get(url, allow_redirects=True)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f0d967619a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Done
-
-
-13:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-The file does not exist
-Done
-
-
-13:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 09-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:06 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-warning: fetch updated the current branch head.
-fast-forwarding your working tree from
-commit 1c1f01e2b859ac7284edc9c5205fc26a2141e1c4.
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 10-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 11-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 12-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 13-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 28-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:44 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 29-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 30-09-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:57 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: detected dubious ownership in repository at '/home/laurens/Somtoday_Agendas'
-To add an exception for this directory, call:
-
-	git config --global --add safe.directory /home/laurens/Somtoday_Agendas
-
-# Run main file
-Done
-
-
-19:02 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: detected dubious ownership in repository at '/home/laurens/Somtoday_Agendas'
-To add an exception for this directory, call:
-
-	git config --global --add safe.directory /home/laurens/Somtoday_Agendas
-
-# Run main file
-Done
-
-
-19:13 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-fatal: detected dubious ownership in repository at '/home/laurens/Somtoday_Agendas'
-To add an exception for this directory, call:
-
-	git config --global --add safe.directory /home/laurens/Somtoday_Agendas
-
-# Run main file
-Done
-
-
-19:23 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:05 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 01-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-20:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-21:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-22:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:00 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-23:30 02-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-00:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-01:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-02:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-03:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-04:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-05:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-06:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-07:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-08:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-09:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-10:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-11:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-12:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-13:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-14:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-15:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-16:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-17:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-18:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:00 03-10-2025
-
-# Get in right directory
-
-# Get up to date
-Already up to date.
-
-# Run main file
-Done
-
-
-19:30 03-10-2025
-
-# Get in right directory
-
-# Get up to date
 Already up to date.
 
 # Run main file
 Done
 
 
-20:00 03-10-2025
+12:30 07-10-2025
 
 # Get in right directory
 
@@ -4406,7 +284,7 @@ Already up to date.
 Done
 
 
-20:30 03-10-2025
+13:00 07-10-2025
 
 # Get in right directory
 
@@ -4417,7 +295,7 @@ Already up to date.
 Done
 
 
-21:00 03-10-2025
+13:30 07-10-2025
 
 # Get in right directory
 
@@ -4428,7 +306,7 @@ Already up to date.
 Done
 
 
-21:30 03-10-2025
+14:00 07-10-2025
 
 # Get in right directory
 
@@ -4439,7 +317,7 @@ Already up to date.
 Done
 
 
-22:00 03-10-2025
+14:30 07-10-2025
 
 # Get in right directory
 
@@ -4450,7 +328,7 @@ Already up to date.
 Done
 
 
-22:30 03-10-2025
+15:00 07-10-2025
 
 # Get in right directory
 
@@ -4461,7 +339,7 @@ Already up to date.
 Done
 
 
-23:00 03-10-2025
+15:30 07-10-2025
 
 # Get in right directory
 
@@ -4472,7 +350,7 @@ Already up to date.
 Done
 
 
-23:30 03-10-2025
+16:00 07-10-2025
 
 # Get in right directory
 
@@ -4483,7 +361,7 @@ Already up to date.
 Done
 
 
-00:00 04-10-2025
+16:30 07-10-2025
 
 # Get in right directory
 
@@ -4494,7 +372,7 @@ Already up to date.
 Done
 
 
-00:30 04-10-2025
+17:00 07-10-2025
 
 # Get in right directory
 
@@ -4505,7 +383,7 @@ Already up to date.
 Done
 
 
-01:00 04-10-2025
+17:30 07-10-2025
 
 # Get in right directory
 
@@ -4516,7 +394,7 @@ Already up to date.
 Done
 
 
-01:30 04-10-2025
+18:00 07-10-2025
 
 # Get in right directory
 
@@ -4527,7 +405,7 @@ Already up to date.
 Done
 
 
-02:00 04-10-2025
+18:30 07-10-2025
 
 # Get in right directory
 
@@ -4538,7 +416,7 @@ Already up to date.
 Done
 
 
-02:30 04-10-2025
+19:00 07-10-2025
 
 # Get in right directory
 
@@ -4549,7 +427,7 @@ Already up to date.
 Done
 
 
-03:00 04-10-2025
+19:30 07-10-2025
 
 # Get in right directory
 
@@ -4560,7 +438,7 @@ Already up to date.
 Done
 
 
-03:30 04-10-2025
+20:00 07-10-2025
 
 # Get in right directory
 
@@ -4571,7 +449,7 @@ Already up to date.
 Done
 
 
-04:00 04-10-2025
+20:30 07-10-2025
 
 # Get in right directory
 
@@ -4582,7 +460,7 @@ Already up to date.
 Done
 
 
-04:30 04-10-2025
+21:00 07-10-2025
 
 # Get in right directory
 
@@ -4593,7 +471,7 @@ Already up to date.
 Done
 
 
-05:00 04-10-2025
+21:30 07-10-2025
 
 # Get in right directory
 
@@ -4604,7 +482,7 @@ Already up to date.
 Done
 
 
-05:30 04-10-2025
+22:00 07-10-2025
 
 # Get in right directory
 
@@ -4615,7 +493,7 @@ Already up to date.
 Done
 
 
-06:00 04-10-2025
+22:30 07-10-2025
 
 # Get in right directory
 
@@ -4626,7 +504,7 @@ Already up to date.
 Done
 
 
-06:30 04-10-2025
+23:00 07-10-2025
 
 # Get in right directory
 
@@ -4637,7 +515,7 @@ Already up to date.
 Done
 
 
-07:00 04-10-2025
+23:30 07-10-2025
 
 # Get in right directory
 
@@ -4648,7 +526,7 @@ Already up to date.
 Done
 
 
-07:30 04-10-2025
+00:00 08-10-2025
 
 # Get in right directory
 
@@ -4659,7 +537,7 @@ Already up to date.
 Done
 
 
-08:00 04-10-2025
+00:30 08-10-2025
 
 # Get in right directory
 
@@ -4670,7 +548,7 @@ Already up to date.
 Done
 
 
-08:30 04-10-2025
+01:00 08-10-2025
 
 # Get in right directory
 
@@ -4681,7 +559,7 @@ Already up to date.
 Done
 
 
-09:00 04-10-2025
+01:30 08-10-2025
 
 # Get in right directory
 
@@ -4692,7 +570,7 @@ Already up to date.
 Done
 
 
-09:30 04-10-2025
+02:00 08-10-2025
 
 # Get in right directory
 
@@ -4703,7 +581,7 @@ Already up to date.
 Done
 
 
-10:00 04-10-2025
+02:30 08-10-2025
 
 # Get in right directory
 
@@ -4714,7 +592,7 @@ Already up to date.
 Done
 
 
-10:30 04-10-2025
+03:00 08-10-2025
 
 # Get in right directory
 
@@ -4725,7 +603,7 @@ Already up to date.
 Done
 
 
-11:00 04-10-2025
+03:30 08-10-2025
 
 # Get in right directory
 
@@ -4736,7 +614,7 @@ Already up to date.
 Done
 
 
-11:30 04-10-2025
+04:00 08-10-2025
 
 # Get in right directory
 
@@ -4747,7 +625,7 @@ Already up to date.
 Done
 
 
-12:00 04-10-2025
+04:30 08-10-2025
 
 # Get in right directory
 
@@ -4758,7 +636,7 @@ Already up to date.
 Done
 
 
-12:30 04-10-2025
+05:00 08-10-2025
 
 # Get in right directory
 
@@ -4769,7 +647,7 @@ Already up to date.
 Done
 
 
-13:00 04-10-2025
+05:30 08-10-2025
 
 # Get in right directory
 
@@ -4780,7 +658,7 @@ Already up to date.
 Done
 
 
-13:30 04-10-2025
+06:00 08-10-2025
 
 # Get in right directory
 
@@ -4791,7 +669,7 @@ Already up to date.
 Done
 
 
-14:00 04-10-2025
+06:30 08-10-2025
 
 # Get in right directory
 
@@ -4802,7 +680,7 @@ Already up to date.
 Done
 
 
-14:30 04-10-2025
+07:00 08-10-2025
 
 # Get in right directory
 
@@ -4813,7 +691,7 @@ Already up to date.
 Done
 
 
-15:00 04-10-2025
+07:30 08-10-2025
 
 # Get in right directory
 
@@ -4824,7 +702,7 @@ Already up to date.
 Done
 
 
-15:30 04-10-2025
+08:00 08-10-2025
 
 # Get in right directory
 
@@ -4835,7 +713,7 @@ Already up to date.
 Done
 
 
-16:00 04-10-2025
+08:30 08-10-2025
 
 # Get in right directory
 
@@ -4846,7 +724,7 @@ Already up to date.
 Done
 
 
-16:30 04-10-2025
+09:00 08-10-2025
 
 # Get in right directory
 
@@ -4857,7 +735,7 @@ Already up to date.
 Done
 
 
-17:00 04-10-2025
+09:30 08-10-2025
 
 # Get in right directory
 
@@ -4868,7 +746,7 @@ Already up to date.
 Done
 
 
-17:30 04-10-2025
+10:00 08-10-2025
 
 # Get in right directory
 
@@ -4879,7 +757,7 @@ Already up to date.
 Done
 
 
-18:00 04-10-2025
+10:30 08-10-2025
 
 # Get in right directory
 
@@ -4890,7 +768,7 @@ Already up to date.
 Done
 
 
-18:30 04-10-2025
+11:00 08-10-2025
 
 # Get in right directory
 
@@ -4901,7 +779,7 @@ Already up to date.
 Done
 
 
-19:00 04-10-2025
+11:30 08-10-2025
 
 # Get in right directory
 
@@ -4912,7 +790,7 @@ Already up to date.
 Done
 
 
-19:30 04-10-2025
+12:00 08-10-2025
 
 # Get in right directory
 
@@ -4923,7 +801,7 @@ Already up to date.
 Done
 
 
-20:00 04-10-2025
+12:30 08-10-2025
 
 # Get in right directory
 
@@ -4934,7 +812,7 @@ Already up to date.
 Done
 
 
-20:30 04-10-2025
+13:00 08-10-2025
 
 # Get in right directory
 
@@ -4945,7 +823,7 @@ Already up to date.
 Done
 
 
-21:00 04-10-2025
+13:30 08-10-2025
 
 # Get in right directory
 
@@ -4956,7 +834,7 @@ Already up to date.
 Done
 
 
-21:30 04-10-2025
+14:00 08-10-2025
 
 # Get in right directory
 
@@ -4967,7 +845,7 @@ Already up to date.
 Done
 
 
-22:00 04-10-2025
+14:30 08-10-2025
 
 # Get in right directory
 
@@ -4978,7 +856,7 @@ Already up to date.
 Done
 
 
-22:30 04-10-2025
+15:00 08-10-2025
 
 # Get in right directory
 
@@ -4989,7 +867,7 @@ Already up to date.
 Done
 
 
-23:00 04-10-2025
+15:30 08-10-2025
 
 # Get in right directory
 
@@ -5000,7 +878,7 @@ Already up to date.
 Done
 
 
-23:30 04-10-2025
+16:00 08-10-2025
 
 # Get in right directory
 
@@ -5011,7 +889,7 @@ Already up to date.
 Done
 
 
-00:00 05-10-2025
+16:30 08-10-2025
 
 # Get in right directory
 
@@ -5022,7 +900,7 @@ Already up to date.
 Done
 
 
-00:30 05-10-2025
+17:00 08-10-2025
 
 # Get in right directory
 
@@ -5033,7 +911,7 @@ Already up to date.
 Done
 
 
-01:00 05-10-2025
+17:30 08-10-2025
 
 # Get in right directory
 
@@ -5044,7 +922,7 @@ Already up to date.
 Done
 
 
-01:30 05-10-2025
+18:00 08-10-2025
 
 # Get in right directory
 
@@ -5055,7 +933,7 @@ Already up to date.
 Done
 
 
-02:00 05-10-2025
+18:30 08-10-2025
 
 # Get in right directory
 
@@ -5066,7 +944,7 @@ Already up to date.
 Done
 
 
-02:30 05-10-2025
+19:00 08-10-2025
 
 # Get in right directory
 
@@ -5077,7 +955,7 @@ Already up to date.
 Done
 
 
-03:00 05-10-2025
+19:30 08-10-2025
 
 # Get in right directory
 
@@ -5088,7 +966,7 @@ Already up to date.
 Done
 
 
-03:30 05-10-2025
+20:00 08-10-2025
 
 # Get in right directory
 
@@ -5099,7 +977,7 @@ Already up to date.
 Done
 
 
-04:00 05-10-2025
+20:30 08-10-2025
 
 # Get in right directory
 
@@ -5110,7 +988,7 @@ Already up to date.
 Done
 
 
-04:30 05-10-2025
+21:00 08-10-2025
 
 # Get in right directory
 
@@ -5121,7 +999,7 @@ Already up to date.
 Done
 
 
-05:00 05-10-2025
+21:30 08-10-2025
 
 # Get in right directory
 
@@ -5132,7 +1010,7 @@ Already up to date.
 Done
 
 
-05:30 05-10-2025
+22:00 08-10-2025
 
 # Get in right directory
 
@@ -5143,7 +1021,7 @@ Already up to date.
 Done
 
 
-06:00 05-10-2025
+22:30 08-10-2025
 
 # Get in right directory
 
@@ -5154,7 +1032,7 @@ Already up to date.
 Done
 
 
-06:30 05-10-2025
+23:00 08-10-2025
 
 # Get in right directory
 
@@ -5165,7 +1043,7 @@ Already up to date.
 Done
 
 
-07:00 05-10-2025
+23:30 08-10-2025
 
 # Get in right directory
 
@@ -5176,7 +1054,7 @@ Already up to date.
 Done
 
 
-07:30 05-10-2025
+00:00 09-10-2025
 
 # Get in right directory
 
@@ -5187,7 +1065,7 @@ Already up to date.
 Done
 
 
-08:00 05-10-2025
+00:30 09-10-2025
 
 # Get in right directory
 
@@ -5198,7 +1076,7 @@ Already up to date.
 Done
 
 
-08:30 05-10-2025
+01:00 09-10-2025
 
 # Get in right directory
 
@@ -5209,7 +1087,7 @@ Already up to date.
 Done
 
 
-09:00 05-10-2025
+01:30 09-10-2025
 
 # Get in right directory
 
@@ -5220,7 +1098,7 @@ Already up to date.
 Done
 
 
-09:30 05-10-2025
+02:00 09-10-2025
 
 # Get in right directory
 
@@ -5231,7 +1109,7 @@ Already up to date.
 Done
 
 
-10:00 05-10-2025
+02:30 09-10-2025
 
 # Get in right directory
 
@@ -5242,7 +1120,7 @@ Already up to date.
 Done
 
 
-10:30 05-10-2025
+03:00 09-10-2025
 
 # Get in right directory
 
@@ -5253,7 +1131,7 @@ Already up to date.
 Done
 
 
-11:00 05-10-2025
+03:30 09-10-2025
 
 # Get in right directory
 
@@ -5264,7 +1142,7 @@ Already up to date.
 Done
 
 
-11:30 05-10-2025
+04:00 09-10-2025
 
 # Get in right directory
 
@@ -5275,7 +1153,7 @@ Already up to date.
 Done
 
 
-12:00 05-10-2025
+04:30 09-10-2025
 
 # Get in right directory
 
@@ -5286,7 +1164,7 @@ Already up to date.
 Done
 
 
-12:30 05-10-2025
+05:00 09-10-2025
 
 # Get in right directory
 
@@ -5297,7 +1175,7 @@ Already up to date.
 Done
 
 
-13:00 05-10-2025
+05:30 09-10-2025
 
 # Get in right directory
 
@@ -5308,7 +1186,7 @@ Already up to date.
 Done
 
 
-13:30 05-10-2025
+06:00 09-10-2025
 
 # Get in right directory
 
@@ -5319,7 +1197,7 @@ Already up to date.
 Done
 
 
-14:00 05-10-2025
+06:30 09-10-2025
 
 # Get in right directory
 
@@ -5330,7 +1208,7 @@ Already up to date.
 Done
 
 
-14:30 05-10-2025
+07:00 09-10-2025
 
 # Get in right directory
 
@@ -5341,7 +1219,7 @@ Already up to date.
 Done
 
 
-15:00 05-10-2025
+07:30 09-10-2025
 
 # Get in right directory
 
@@ -5352,7 +1230,7 @@ Already up to date.
 Done
 
 
-15:30 05-10-2025
+08:00 09-10-2025
 
 # Get in right directory
 
@@ -5363,7 +1241,7 @@ Already up to date.
 Done
 
 
-16:00 05-10-2025
+08:30 09-10-2025
 
 # Get in right directory
 
@@ -5374,7 +1252,7 @@ Already up to date.
 Done
 
 
-16:30 05-10-2025
+09:00 09-10-2025
 
 # Get in right directory
 
@@ -5385,7 +1263,7 @@ Already up to date.
 Done
 
 
-17:00 05-10-2025
+09:30 09-10-2025
 
 # Get in right directory
 
@@ -5396,7 +1274,7 @@ Already up to date.
 Done
 
 
-17:30 05-10-2025
+10:00 09-10-2025
 
 # Get in right directory
 
@@ -5407,7 +1285,7 @@ Already up to date.
 Done
 
 
-18:00 05-10-2025
+10:30 09-10-2025
 
 # Get in right directory
 
@@ -5418,7 +1296,7 @@ Already up to date.
 Done
 
 
-18:30 05-10-2025
+11:00 09-10-2025
 
 # Get in right directory
 
@@ -5429,7 +1307,7 @@ Already up to date.
 Done
 
 
-19:00 05-10-2025
+11:30 09-10-2025
 
 # Get in right directory
 
@@ -5440,7 +1318,7 @@ Already up to date.
 Done
 
 
-19:30 05-10-2025
+12:00 09-10-2025
 
 # Get in right directory
 
@@ -5451,7 +1329,7 @@ Already up to date.
 Done
 
 
-20:00 05-10-2025
+12:30 09-10-2025
 
 # Get in right directory
 
@@ -5462,7 +1340,7 @@ Already up to date.
 Done
 
 
-20:30 05-10-2025
+13:00 09-10-2025
 
 # Get in right directory
 
@@ -5473,7 +1351,7 @@ Already up to date.
 Done
 
 
-21:00 05-10-2025
+13:30 09-10-2025
 
 # Get in right directory
 
@@ -5484,7 +1362,7 @@ Already up to date.
 Done
 
 
-21:30 05-10-2025
+14:00 09-10-2025
 
 # Get in right directory
 
@@ -5495,7 +1373,7 @@ Already up to date.
 Done
 
 
-22:00 05-10-2025
+14:30 09-10-2025
 
 # Get in right directory
 
@@ -5506,7 +1384,7 @@ Already up to date.
 Done
 
 
-22:30 05-10-2025
+15:00 09-10-2025
 
 # Get in right directory
 
@@ -5517,7 +1395,7 @@ Already up to date.
 Done
 
 
-23:00 05-10-2025
+15:30 09-10-2025
 
 # Get in right directory
 
@@ -5528,7 +1406,7 @@ Already up to date.
 Done
 
 
-23:30 05-10-2025
+16:00 09-10-2025
 
 # Get in right directory
 
@@ -5539,7 +1417,7 @@ Already up to date.
 Done
 
 
-00:00 06-10-2025
+16:30 09-10-2025
 
 # Get in right directory
 
@@ -5550,7 +1428,7 @@ Already up to date.
 Done
 
 
-00:30 06-10-2025
+17:00 09-10-2025
 
 # Get in right directory
 
@@ -5561,7 +1439,7 @@ Already up to date.
 Done
 
 
-01:00 06-10-2025
+17:30 09-10-2025
 
 # Get in right directory
 
@@ -5572,7 +1450,7 @@ Already up to date.
 Done
 
 
-01:30 06-10-2025
+18:00 09-10-2025
 
 # Get in right directory
 
@@ -5583,7 +1461,7 @@ Already up to date.
 Done
 
 
-02:00 06-10-2025
+18:30 09-10-2025
 
 # Get in right directory
 
@@ -5594,7 +1472,7 @@ Already up to date.
 Done
 
 
-02:30 06-10-2025
+19:00 09-10-2025
 
 # Get in right directory
 
@@ -5605,7 +1483,7 @@ Already up to date.
 Done
 
 
-03:00 06-10-2025
+19:30 09-10-2025
 
 # Get in right directory
 
@@ -5616,7 +1494,7 @@ Already up to date.
 Done
 
 
-03:30 06-10-2025
+20:00 09-10-2025
 
 # Get in right directory
 
@@ -5627,7 +1505,7 @@ Already up to date.
 Done
 
 
-04:00 06-10-2025
+20:30 09-10-2025
 
 # Get in right directory
 
@@ -5638,7 +1516,7 @@ Already up to date.
 Done
 
 
-04:30 06-10-2025
+21:00 09-10-2025
 
 # Get in right directory
 
@@ -5649,7 +1527,7 @@ Already up to date.
 Done
 
 
-05:00 06-10-2025
+21:30 09-10-2025
 
 # Get in right directory
 
@@ -5660,7 +1538,7 @@ Already up to date.
 Done
 
 
-05:30 06-10-2025
+22:00 09-10-2025
 
 # Get in right directory
 
@@ -5671,7 +1549,7 @@ Already up to date.
 Done
 
 
-06:00 06-10-2025
+22:30 09-10-2025
 
 # Get in right directory
 
@@ -5682,7 +1560,7 @@ Already up to date.
 Done
 
 
-06:30 06-10-2025
+23:00 09-10-2025
 
 # Get in right directory
 
@@ -5693,7 +1571,7 @@ Already up to date.
 Done
 
 
-07:00 06-10-2025
+23:30 09-10-2025
 
 # Get in right directory
 
@@ -5704,7 +1582,7 @@ Already up to date.
 Done
 
 
-07:30 06-10-2025
+00:00 10-10-2025
 
 # Get in right directory
 
@@ -5715,7 +1593,7 @@ Already up to date.
 Done
 
 
-08:00 06-10-2025
+00:30 10-10-2025
 
 # Get in right directory
 
@@ -5726,7 +1604,7 @@ Already up to date.
 Done
 
 
-08:30 06-10-2025
+01:00 10-10-2025
 
 # Get in right directory
 
@@ -5737,7 +1615,7 @@ Already up to date.
 Done
 
 
-09:00 06-10-2025
+01:30 10-10-2025
 
 # Get in right directory
 
@@ -5748,7 +1626,7 @@ Already up to date.
 Done
 
 
-09:30 06-10-2025
+02:00 10-10-2025
 
 # Get in right directory
 
@@ -5759,7 +1637,7 @@ Already up to date.
 Done
 
 
-10:00 06-10-2025
+02:30 10-10-2025
 
 # Get in right directory
 
@@ -5770,7 +1648,7 @@ Already up to date.
 Done
 
 
-10:30 06-10-2025
+03:00 10-10-2025
 
 # Get in right directory
 
@@ -5781,7 +1659,7 @@ Already up to date.
 Done
 
 
-11:00 06-10-2025
+03:30 10-10-2025
 
 # Get in right directory
 
@@ -5792,7 +1670,7 @@ Already up to date.
 Done
 
 
-11:30 06-10-2025
+04:00 10-10-2025
 
 # Get in right directory
 
@@ -5803,7 +1681,7 @@ Already up to date.
 Done
 
 
-12:00 06-10-2025
+04:30 10-10-2025
 
 # Get in right directory
 
@@ -5814,7 +1692,7 @@ Already up to date.
 Done
 
 
-12:30 06-10-2025
+05:00 10-10-2025
 
 # Get in right directory
 
@@ -5825,7 +1703,7 @@ Already up to date.
 Done
 
 
-13:00 06-10-2025
+05:30 10-10-2025
 
 # Get in right directory
 
@@ -5836,7 +1714,7 @@ Already up to date.
 Done
 
 
-13:30 06-10-2025
+06:00 10-10-2025
 
 # Get in right directory
 
@@ -5847,7 +1725,7 @@ Already up to date.
 Done
 
 
-14:00 06-10-2025
+06:30 10-10-2025
 
 # Get in right directory
 
@@ -5858,7 +1736,7 @@ Already up to date.
 Done
 
 
-14:30 06-10-2025
+07:00 10-10-2025
 
 # Get in right directory
 
@@ -5869,7 +1747,7 @@ Already up to date.
 Done
 
 
-15:00 06-10-2025
+07:30 10-10-2025
 
 # Get in right directory
 
@@ -5880,7 +1758,7 @@ Already up to date.
 Done
 
 
-15:30 06-10-2025
+08:00 10-10-2025
 
 # Get in right directory
 
@@ -5891,7 +1769,7 @@ Already up to date.
 Done
 
 
-16:00 06-10-2025
+08:30 10-10-2025
 
 # Get in right directory
 
@@ -5902,7 +1780,7 @@ Already up to date.
 Done
 
 
-16:30 06-10-2025
+09:00 10-10-2025
 
 # Get in right directory
 
@@ -5913,7 +1791,7 @@ Already up to date.
 Done
 
 
-17:00 06-10-2025
+09:30 10-10-2025
 
 # Get in right directory
 
@@ -5924,7 +1802,7 @@ Already up to date.
 Done
 
 
-17:30 06-10-2025
+10:00 10-10-2025
 
 # Get in right directory
 
@@ -5935,7 +1813,7 @@ Already up to date.
 Done
 
 
-18:00 06-10-2025
+10:30 10-10-2025
 
 # Get in right directory
 
@@ -5946,7 +1824,7 @@ Already up to date.
 Done
 
 
-18:30 06-10-2025
+11:00 10-10-2025
 
 # Get in right directory
 
@@ -5957,7 +1835,7 @@ Already up to date.
 Done
 
 
-19:00 06-10-2025
+11:30 10-10-2025
 
 # Get in right directory
 
@@ -5968,7 +1846,7 @@ Already up to date.
 Done
 
 
-19:30 06-10-2025
+12:00 10-10-2025
 
 # Get in right directory
 
@@ -5979,7 +1857,7 @@ Already up to date.
 Done
 
 
-20:00 06-10-2025
+12:30 10-10-2025
 
 # Get in right directory
 
@@ -5990,7 +1868,7 @@ Already up to date.
 Done
 
 
-20:30 06-10-2025
+13:00 10-10-2025
 
 # Get in right directory
 
@@ -6001,7 +1879,7 @@ Already up to date.
 Done
 
 
-21:00 06-10-2025
+13:30 10-10-2025
 
 # Get in right directory
 
@@ -6012,7 +1890,7 @@ Already up to date.
 Done
 
 
-21:30 06-10-2025
+14:00 10-10-2025
 
 # Get in right directory
 
@@ -6023,7 +1901,7 @@ Already up to date.
 Done
 
 
-22:00 06-10-2025
+14:30 10-10-2025
 
 # Get in right directory
 
@@ -6034,7 +1912,7 @@ Already up to date.
 Done
 
 
-22:30 06-10-2025
+15:00 10-10-2025
 
 # Get in right directory
 
@@ -6045,7 +1923,7 @@ Already up to date.
 Done
 
 
-23:00 06-10-2025
+15:30 10-10-2025
 
 # Get in right directory
 
@@ -6056,7 +1934,7 @@ Already up to date.
 Done
 
 
-23:30 06-10-2025
+16:00 10-10-2025
 
 # Get in right directory
 
@@ -6067,7 +1945,7 @@ Already up to date.
 Done
 
 
-00:00 07-10-2025
+16:15 10-10-2025
 
 # Get in right directory
 
