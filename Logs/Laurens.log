@@ -3694,3 +3694,282 @@ Already up to date.
 Done
 
 
+23:05 20-10-2025
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+/home/laurens/Somtoday_Agendas/Custom.py:15: SyntaxWarning: invalid escape sequence '\,'
+  "tm116_binask\, tm115_binask",
+/home/laurens/Somtoday_Agendas/Custom.py:16: SyntaxWarning: invalid escape sequence '\,'
+  "tm034\, tm035",
+/home/laurens/Somtoday_Agendas/Custom.py:17: SyntaxWarning: invalid escape sequence '\,'
+  "tm208\, tm214\, tm137\, tm215",
+/home/laurens/Somtoday_Agendas/Custom.py:18: SyntaxWarning: invalid escape sequence '\,'
+  "tm208\, tm137\, tm214\, tm215",
+/home/laurens/Somtoday_Agendas/Custom.py:23: SyntaxWarning: invalid escape sequence '\,'
+  "tm222\, tm223\, tm224",
+/home/laurens/Somtoday_Agendas/Custom.py:39: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kua1\, oga5.kua1': 'Kunst Algemeen',
+/home/laurens/Somtoday_Agendas/Custom.py:40: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kua1\, oga4.kua1': 'Kunst Algemeen',
+/home/laurens/Somtoday_Agendas/Custom.py:41: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oga5.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:42: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh5.kumu1\, oga4.kumu1\, oga5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:43: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga5.kumu1\, oh5.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:44: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh5.kumu1\, oga6.kumu1\, oh4.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:45: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oh5.kumu1\, oga6.kumu1\, oga5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:46: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oh4.kumu1\, oga4.kumu1\, oga5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:47: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh5.kumu1\, oga4.kumu1\, oh4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:48: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh5.kumu1\, oga5.kumu1\, oh4.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:49: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga4.kumu1\, oga5.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:50: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga5.kumu1\, oh4.kumu1\, oh5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:51: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh4.kumu1\, oh5.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:52: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:53: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga6.kumu1\, oga4.kumu1\, oga5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:54: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh4.kumu1\, oga5.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:55: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga5.kumu1\, oga6.kumu1\, oh5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:56: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh5.kumu1\, oga6.kumu1\, oga5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:57: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:58: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga5.kumu1\, oga6.kumu1\, oga4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:59: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga6.kumu1\, oh4.kumu1\, oga5.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:60: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:61: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga6.kumu1\, oga4.kumu1\, oh5.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:62: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga4.kumu1\, oh5.kumu1\, oga6.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:63: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga6.kumu1\, oga5.kumu1\, oga4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:64: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga6.kumu1\, oh4.kumu1\, oh5.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:65: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:66: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga4.kumu1\, oga6.kumu1\, oh5.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:67: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh4.kumu1\, oh5.kumu1\, oga6.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:68: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga6.kumu1\, oh5.kumu1\, oga4.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:69: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga4.kumu1\, oh4.kumu1\, oh5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:70: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga6.kumu1\, oh4.kumu1\, oh5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:71: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga5.kumu1\, oh4.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:72: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh4.kumu1\, oga5.kumu1\, oh5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:73: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh4.kumu1\, oga6.kumu1\, oh5.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:74: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh5.kumu1\, oh4.kumu1\, oga4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:75: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga5.kumu1\, oga6.kumu1\, oga4.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:76: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga5.kumu1\, oh4.kumu1\, oga4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:77: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh4.kumu1\, oga4.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:78: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oga5.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:79: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga4.kumu1\, oga6.kumu1\, oga5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:80: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:81: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oh4.kumu1\, oh5.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:82: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga5.kumu1\, oga4.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:83: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oh4.kumu1\, oga5.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:84: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga6.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:85: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh5.kumu1\, oga5.kumu1\, oh4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:86: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga5.kumu1\, oh4.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:87: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:88: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh5.kumu1\, oga5.kumu1\, oga4.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:89: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga6.kumu1\, oh5.kumu1\, oga5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:90: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga5.kumu1\, oh5.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:91: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oh5.kumu1\, oga6.kumu1\, oga4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:92: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga6.kumu1\, oga4.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:93: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga5.kumu1\, oga6.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:94: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh4.kumu1\, oga6.kumu1\, oh5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:95: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga6.kumu1\, oga5.kumu1\, oh5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:96: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga6.kumu1\, oga5.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:97: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh4.kumu1\, oga4.kumu1\, oga5.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:98: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga4.kumu1\, oh5.kumu1\, oga6.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:99: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga4.kumu1\, oh5.kumu1\, oh4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:100: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:101: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga5.kumu1\, oh5.kumu1\, oga6.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:102: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:103: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:104: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oga5.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:105: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga5.kumu1\, oga4.kumu1\, oh4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:106: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga6.kumu1\, oh4.kumu1\, oga5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:107: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga5.kumu1\, oh5.kumu1\, oh4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:108: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh5.kumu1\, oh4.kumu1\, oga5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:109: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh5.kumu1\, oga6.kumu1\, oga4.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:110: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:111: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:112: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oh5.kumu1\, oga4.kumu1\, oga5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:113: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:114: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oh4.kumu1\, oga5.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:115: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh4.kumu1\, oh5.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:116: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oh5.kumu1\, oga4.kumu1\, oga6.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:117: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga6.kumu1\, oga4.kumu1\, oh4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:118: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh5.kumu1\, oga6.kumu1\, oh4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:119: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga4.kumu1\, oh4.kumu1\, oga6.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:120: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga5.kumu1\, oh5.kumu1\, oga4.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:121: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga5.kumu1\, oga4.kumu1\, oh5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:122: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:123: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oh4.kumu1\, oga5.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:124: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga5.kumu1\, oh4.kumu1\, oh5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:125: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga4.kumu1\, oga5.kumu1\, oga6.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:126: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:127: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga4.kumu1\, oga5.kumu1\, oh4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:128: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga5.kumu1\, oga4.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:129: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga4.kumu1\, oh4.kumu1\, oga6.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:130: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga4.kumu1\, oga6.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:131: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga6.kumu1\, oga4.kumu1\, oga5.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:132: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh4.kumu1\, oga4.kumu1\, oh5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:133: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oh4.kumu1\, oga4.kumu1\, oga6.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:134: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh4.kumu1\, oh5.kumu1\, oga4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:135: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga6.kumu1\, oh4.kumu1\, oga4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:136: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga6.kumu1\, oga4.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:137: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga5.kumu1\, oh5.kumu1\, oh4.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:138: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga4.kumu1\, oga5.kumu1\, oh5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:139: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oh5.kumu1\, oga5.kumu1\, oga6.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:140: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh5.kumu1\, oga4.kumu1\, oh4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:141: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga6.kumu1\, oga5.kumu1\, oh4.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:142: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga6.kumu1\, oh5.kumu1\, oga5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:143: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga5.kumu1\, oga6.kumu1\, oh4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:144: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga4.kumu1\, oga6.kumu1\, oga5.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:145: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh4.kumu1\, oga6.kumu1\, oga4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:146: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga6.kumu1\, oh5.kumu1\, oh4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:147: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oh5.kumu1\, oga5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:148: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh5.kumu1\, oh4.kumu1\, oga5.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:149: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh4.kumu1\, oga5.kumu1\, oh5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:150: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga6.kumu1\, oga5.kumu1\, oga4.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:151: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oh4.kumu1\, oga6.kumu1\, oga5.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:152: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga6.kumu1\, oh5.kumu1\, oh4.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:153: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.kumu1\, oga6.kumu1\, oga5.kumu1\, oh5.kumu1\, oh4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:154: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oga4.kumu1\, oh5.kumu1\, oh4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:155: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga5.kumu1\, oga6.kumu1\, oh4.kumu1\, oga4.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:156: SyntaxWarning: invalid escape sequence '\,'
+  f'oh5.kumu1\, oga4.kumu1\, oh4.kumu1\, oga5.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:157: SyntaxWarning: invalid escape sequence '\,'
+  f'oh4.kumu1\, oga6.kumu1\, oh5.kumu1\, oga4.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:158: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oga6.kumu1\, oh4.kumu1\, oga4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:159: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh4.kumu1\, oga4.kumu1\, oh5.kumu1\, oga5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:160: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.kumu1\, oh4.kumu1\, oga5.kumu1\, oga4.kumu1\, oh5.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:161: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.kumu1\, oh5.kumu1\, oh4.kumu1\, oga4.kumu1\, oga6.kumu1': 'Kunst (Muziek)',
+/home/laurens/Somtoday_Agendas/Custom.py:168: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.o&o1\, oga6.o&o1\, oga5.o&o1': 'Onderzoeken en Ontwerpen',
+/home/laurens/Somtoday_Agendas/Custom.py:169: SyntaxWarning: invalid escape sequence '\,'
+  f'oga4.o&o1\, oga5.o&o1\, oga6.o&o1': 'Onderzoeken en Ontwerpen',
+/home/laurens/Somtoday_Agendas/Custom.py:170: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.o&o1\, oga4.o&o1\, oga6.o&o1': 'Onderzoeken en Ontwerpen',
+/home/laurens/Somtoday_Agendas/Custom.py:171: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.o&o1\, oga5.o&o1\, oga4.o&o1': 'Onderzoeken en Ontwerpen',
+/home/laurens/Somtoday_Agendas/Custom.py:172: SyntaxWarning: invalid escape sequence '\,'
+  f'oga6.o&o1\, oga4.o&o1\, oga5.o&o1': 'Onderzoeken en Ontwerpen',
+/home/laurens/Somtoday_Agendas/Custom.py:173: SyntaxWarning: invalid escape sequence '\,'
+  f'oga5.o&o1\, oga6.o&o1\, oga4.o&o1': 'Onderzoeken en Ontwerpen',
+Done
+
+
