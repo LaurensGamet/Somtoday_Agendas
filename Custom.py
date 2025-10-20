@@ -180,7 +180,7 @@ Lessen = {
     f'Les - wisb' : 'Wiskunde B',
     f'Les - fatl' : 'Frans',
     f'Les - netl' : 'Nederlands',
-    f'Les - ec' : 'Economie',
+    f'Les - econ' : 'Economie',
     f'Les - schk' : 'Scheikunde',
     f'Les - nat' : 'Natuurkunde',
     f'Les - dutl' : 'Duits',
