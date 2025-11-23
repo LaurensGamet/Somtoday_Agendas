@@ -3156,3 +3156,20 @@ Already up to date.
 Done
 
 
+23:00 23-11-2025
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   d523e148..fc008e8d  main       -> origin/main
+Updating d523e148..fc008e8d
+Fast-forward
+ Loukas/Final-File.ics | 787 +++++++++++++++++++++++++-------------------------
+ Loukas/main.py        |   9 +-
+ 2 files changed, 399 insertions(+), 397 deletions(-)
+
+# Run main file
+Done
+
+
