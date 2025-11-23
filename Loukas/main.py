@@ -20,7 +20,6 @@ jaar_volgende, week_volgende, _ = volgende_week_datum.isocalendar()
 
 # Alles samenplakken
 resultaat = f"{jaar}{week:02d}-{jaar}{week_volgende:02d}"
-
 # Give simpler names
 file1 = f'/home/laurens/Somtoday_Agendas/Loukas/rooster-{resultaat}.txt'
 file2 = '/home/laurens/Somtoday_Agendas/Loukas/Final-File.ics'
@@ -80,6 +79,12 @@ with open(file2, 'r') as file:
 
 # Naam agenda
 filedata = filedata.replace('BEGIN:VCALENDAR', 'BEGIN:VCALENDAR\nNAME:Somtoday Loukas\nX-WR-CALNAME:Somtoday Loukas')
+
+with open(file2, 'w') as file:
+  file.write(filedata)
+
+# Dubbele shit
+filedata = filedata.replace('END:VEVENT\nEND:VEVENT', 'END:VEVENT')
 
 with open(file2, 'w') as file:
   file.write(filedata)
