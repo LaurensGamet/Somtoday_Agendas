@@ -89,6 +89,12 @@ filedata = filedata.replace('END:VEVENT\nEND:VEVENT', 'END:VEVENT')
 with open(file2, 'w') as file:
   file.write(filedata)
 
+# Toetsen
+filedata = filedata.replace('[o] [toets] ', '[TOETS]')
+
+with open(file2, 'w') as file:
+  file.write(filedata)
+
 # Perform all replacements
 for old, new in Custom.Lessen.items():
     filedata = filedata.replace(old, new)
@@ -113,6 +119,11 @@ for prefix, (start, end) in ranges.items():
         filedata = filedata.replace(f"SUMMARY:[>] ", f'SUMMARY:')
         filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:')
 
+for prefix, (start, end) in ranges.items():
+    for i in range(start, end + 1):
+        formatted_number = f"{i:03d}" if prefix in ["l", "d"] else f"{i:01d}"
+        filedata = filedata.replace(f"SUMMARY:[>] ", f'SUMMARY:')
+        filedata = filedata.replace(f"SUMMARY:[TOETS] {prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:[TOETS] ')
 # Perform specific replacements
 #for replacement in Custom.Lokalen:
 #    filedata = filedata.replace(replacement, 'SUMMARY:')
