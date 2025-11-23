@@ -78,7 +78,7 @@ with open(file2, 'r') as file:
   filedata = file.read()
 
 # Naam agenda
-filedata = filedata.replace('BEGIN:VCALENDAR', 'BEGIN:VCALENDAR\nNAME:Somtoday Loukas\nX-WR-CALNAME:Somtoday Loukas')
+filedata = filedata.replace('BEGIN:VCALENDAR', 'BEGIN:VCALENDAR\nNAME:Zermelo Loukas\nX-WR-CALNAME:Zermelo Loukas')
 
 with open(file2, 'w') as file:
   file.write(filedata)
