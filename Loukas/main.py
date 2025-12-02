@@ -122,6 +122,12 @@ for prefix, (start, end) in ranges.items():
 for prefix, (start, end) in ranges.items():
     for i in range(start, end + 1):
         formatted_number = f"{i:03d}" if prefix in ["l", "d"] else f"{i:01d}"
+        filedata = filedata.replace(f"SUMMARY:[!] ", f'SUMMARY:')
+        filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:')
+
+for prefix, (start, end) in ranges.items():
+    for i in range(start, end + 1):
+        formatted_number = f"{i:03d}" if prefix in ["l", "d"] else f"{i:01d}"
         filedata = filedata.replace(f"SUMMARY:[>] ", f'SUMMARY:')
         filedata = filedata.replace(f"SUMMARY:[TOETS] {prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:[TOETS] ')
 # Perform specific replacements
