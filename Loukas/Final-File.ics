@@ -1,8 +1,0 @@
-BEGIN:VCALENDAR
-NAME:Zermelo Loukas
-X-WR-CALNAME:Zermelo Loukas
-VERSION:2.0
-PRODID:Zermelo Roostermakers Portal API
-DESCRIPTION:Zermelo Portal
-REFRESH-INTERVAL:PT13M
-END:VCALENDAR
