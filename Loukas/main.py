@@ -77,7 +77,7 @@ data = data.replace(
 )
 
 # Toetsen
-data = data.replace('[o] [toets] ', '[TOETS]')
+data = data.replace('[o] [toets]', '[TOETS]')
 
 # Lesnamen
 for old, new in Custom.Lessen.items():
