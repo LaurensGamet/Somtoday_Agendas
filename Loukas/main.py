@@ -76,6 +76,9 @@ data = data.replace(
     'BEGIN:VCALENDAR\nNAME:Zermelo Loukas\nX-WR-CALNAME:Zermelo Loukas'
 )
 
+data = data.replace(
+    'REFRESH-INTERVAL:PT13M', '')
+
 # Toetsen
 data = data.replace('[o] [toets]', '[TOETS]')
 
