@@ -84,8 +84,8 @@ for old, new in Custom.Lessen.items():
     data = data.replace(old, new)
     
 # Lokalen (Custom)
-for loc in Custom.Lokalen:
-    data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
+#for loc in Custom.Lokalen:
+#    data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
 
 # ================= WRITE FINAL =================
 with open(FINAL_FILE, 'w') as f:
