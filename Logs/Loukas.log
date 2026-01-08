@@ -6303,3 +6303,19 @@ NameError: name 'Custom_Loukas' is not defined
 Done
 
 
+02:04 08-01-2026
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Traceback (most recent call last):
+  File "/home/laurens/Somtoday_Agendas/Loukas/main.py", line 87, in <module>
+    for loc in Custom_Loukas.Lokalen:
+               ^^^^^^^^^^^^^
+NameError: name 'Custom_Loukas' is not defined
+Done
+
+
