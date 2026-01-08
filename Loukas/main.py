@@ -101,12 +101,6 @@ for prefix, (start, end) in ranges.items():
         data = data.replace(
             f"SUMMARY:{prefix}{num} ",
             f"LOCATION:{prefix}{num}\nSUMMARY:"
-        data = data.replace(
-            f"SUMMARY:{prefix}{num}_1 ",
-            f"LOCATION:{prefix}{num}\nSUMMARY:"
-        data = data.replace(
-            f"SUMMARY:{prefix}{num}_2 ",
-            f"LOCATION:{prefix}{num}\nSUMMARY:"
         )
 
         data = data.replace("SUMMARY:[>] ", "SUMMARY:")
@@ -116,6 +110,13 @@ for prefix, (start, end) in ranges.items():
             f"LOCATION:{prefix}{num}\nSUMMARY:[TOETS] "
         )
 
+# Lokalen (Custom)
+for loc in Custom_Loukas.Lokalen:
+    filedata = filedata.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
+
+with open(FINAL_FILE, 'w') as f:
+    f.write(filedata)
+    
 # ================= WRITE FINAL =================
 with open(FINAL_FILE, 'w') as f:
     f.write(data)
