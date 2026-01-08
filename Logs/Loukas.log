@@ -6287,3 +6287,19 @@ SyntaxError: invalid syntax. Perhaps you forgot a comma?
 Done
 
 
+02:02 08-01-2026
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+Traceback (most recent call last):
+  File "/home/laurens/Somtoday_Agendas/Loukas/main.py", line 114, in <module>
+    for loc in Custom_Loukas.Lokalen:
+               ^^^^^^^^^^^^^
+NameError: name 'Custom_Loukas' is not defined
+Done
+
+
