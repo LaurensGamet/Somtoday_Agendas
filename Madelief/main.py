@@ -3,86 +3,80 @@ import os
 import shutil
 import sys
 
-sys.path.append('/home/laurens/Somtoday_Agendas/')
+sys.path.append('/home/laurens/Somtoday_Agendas')
 import Custom
 
-# Give simpler names
-file1 = '/home/laurens/Somtoday_Agendas/Madelief/c5490491-11eb-4aca-a8f1-ea3f58e75d54.ics'
-file2 = '/home/laurens/Somtoday_Agendas/Madelief/Final-File.ics'
-klas = 'oga3b'
+# ================= CONFIG =================
+BASE_PATH = '/home/laurens/Somtoday_Agendas/Madelief'
+SOURCE_FILE = f'{BASE_PATH}/original.ics'
+FINAL_FILE  = f'{BASE_PATH}/Final-File.ics'
 
-# Makes sure no duplicate files
-if os.path.exists(file2):
-  os.remove(file2)
-else:
-  print("The file does not exist")
+URL = 'https://api.somtoday.nl/rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54'
 
-# Gets original file
-url = 'https://api.somtoday.nl/rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54'
-r = requests.get(url, allow_redirects=True)
-open(file1, 'wb').write(r.content)
+REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij']
 
-with open(file1, 'r') as file:
-  filedata = file.read()
+# ================= DOWNLOAD =================
+if os.path.exists(FINAL_FILE):
+    os.remove(FINAL_FILE)
 
-# Makes Final-File.ics from original
-shutil.copyfile(file1, file2)
+r = requests.get(URL)
+with open(SOURCE_FILE, 'wb') as f:
+    f.write(r.content)
 
-# Replaces text in original file
+shutil.copyfile(SOURCE_FILE, FINAL_FILE)
 
-# Studiedag
-def remove_events_with_summary(input_file, output_file, keyword):
-    with open(input_file, 'r') as file:
-        lines = file.readlines()
+# ================= VEVENT FILTER =================
+def remove_events_with_keywords(filename, keywords):
+    with open(filename, 'r') as f:
+        lines = f.readlines()
 
-    result_lines = []  # List to store lines to keep
-    i = 0  # Line index
+    result = []
+    i = 0
 
     while i < len(lines):
-        # Check if a VEVENT block starts
         if lines[i].strip() == "BEGIN:VEVENT":
-            # Check if the block is at least 11 lines long
-            if i + 10 < len(lines):
-                # Check if the fourth line in the block contains the keyword
-                if f"SUMMARY:{keyword}" in lines[i + 4]:
-                    #print(f"Deleting VEVENT block starting at line {i}")  # Debugging
-                    # Skip the 11 lines of this VEVENT block
-                    i += 12
-                    continue  # Skip appending these lines to the result
-            # If the block is too short, just append it (avoid breaking the structure)
-        result_lines.append(lines[i])
+            block = []
+            remove = False
+
+            while i < len(lines):
+                line = lines[i]
+                block.append(line)
+
+                if line.startswith("SUMMARY") and any(k in line for k in keywords):
+                    remove = True
+
+                if line.strip() == "END:VEVENT":
+                    break
+                i += 1
+
+            if not remove:
+                result.extend(block)
+        else:
+            result.append(lines[i])
+
         i += 1
 
-    # Write the remaining lines to the output file
-    with open(output_file, 'w') as file:
-        file.writelines(result_lines)
+    with open(filename, 'w') as f:
+        f.writelines(result)
 
-# Test the function
-remove_events_with_summary(file1, file2, 'Studiedag')
-remove_events_with_summary(file1, file2, 'Lesvrij')
-remove_events_with_summary(file1, file2, 'Sneeuwvrij')
+# ================= CLEAN EVENTS =================
+remove_events_with_keywords(FINAL_FILE, REMOVE_KEYWORDS)
 
-with open(file2, 'r') as file:
-  filedata = file.read()
+# ================= TEXT REPLACEMENTS =================
+with open(FINAL_FILE, 'r') as f:
+    filedata = f.read()
 
 # Naam agenda
-filedata = filedata.replace('NAME:Somtoday agenda', 'NAME:Somtoday Madelief')
+filedata = filedata.replace(
+    'NAME:Somtoday agenda',
+    'NAME:Somtoday Madelief'
+)
 
-with open(file2, 'w') as file:
-  file.write(filedata)
-
-
-# Perform all replacements
+# Lesnamen
 for old, new in Custom.Lessen.items():
     filedata = filedata.replace(old, new)
 
-# Write the modified data back to the file
-with open(file2, 'w') as file:
-    file.write(filedata)
-
-# Lokalen
-
-# Define the ranges for replacements
+# Lokalen (ranges)
 ranges = {
     "be": (1, 300),
     "tm": (1, 300),
@@ -90,23 +84,19 @@ ranges = {
     "cb": (1, 200)
 }
 
-# Perform range-based replacements
 for prefix, (start, end) in ranges.items():
     for i in range(start, end + 1):
-        formatted_number = f"{i:03d}" if prefix in ["be", "tm", "cb"] else f"{i:02d}"
-        filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} - ", 'SUMMARY:')
+        num = f"{i:03d}" if prefix in ["be", "tm", "cb"] else f"{i:02d}"
+        filedata = filedata.replace(f"SUMMARY:{prefix}{num} - ", 'SUMMARY:')
 
-# Perform specific replacements
-for replacement in Custom.Lokalen:
-    filedata = filedata.replace(f'SUMMARY:{replacement} - ', 'SUMMARY:')
+# Lokalen (Custom)
+for loc in Custom.Lokalen:
+    filedata = filedata.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
 
-# Write the modified data back to the file
-with open(file2, 'w') as file:
-    file.write(filedata)
+with open(FINAL_FILE, 'w') as f:
+    f.write(filedata)
 
-# Delete temporary file
+# ================= CLEANUP =================
+os.remove(SOURCE_FILE)
 
-if os.path.exists(file1):
-  os.remove(file1)
-else:
-  print("The file does not exist")
+print("✅ Agenda succesvol opgeschoond")
