@@ -13,3 +13,8 @@ Lessen = {
     f'toets v4a v4c v4b v4e v4d': 'Toets',
     f'lo v4.lo1': 'Lichamelijke Opvoeding',
 }
+
+Lokalen = [
+    "l224_1",
+    "l224_2"
+]
