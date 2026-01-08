@@ -12,9 +12,10 @@ Lessen = {
     f'maat v4.maat2': 'Maatschappijleer',
     f'toets v4a v4c v4b v4e v4d': 'Toets',
     f'lo v4.lo1': 'Lichamelijke Opvoeding',
+    f'lo v4.lo_turnenspringen2': 'Lichamelijke Opvoeding',
 }
 
-Lokalen = [
-    "l224_1",
-    "l224_2"
-]
+#Lokalen = [
+#    "l224_1",
+#    "l224_2"
+#]
