@@ -82,7 +82,17 @@ data = data.replace('[o] [toets]', '[TOETS]')
 # Lesnamen
 for old, new in Custom.Lessen.items():
     data = data.replace(old, new)
+    
+# Lokalen (Custom)
+for loc in Custom_Loukas.Lokalen:
+    filedata = filedata.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
 
+with open(FINAL_FILE, 'w') as f:
+    f.write(filedata)
+    
+# ================= WRITE FINAL =================
+with open(FINAL_FILE, 'w') as f:
+    f.write(data)
 # ================= LOKALEN =================
 ranges = {
     "l": (1, 300),
@@ -109,17 +119,6 @@ for prefix, (start, end) in ranges.items():
             f"SUMMARY:[TOETS] {prefix}{num} ",
             f"LOCATION:{prefix}{num}\nSUMMARY:[TOETS] "
         )
-
-# Lokalen (Custom)
-for loc in Custom_Loukas.Lokalen:
-    filedata = filedata.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
-
-with open(FINAL_FILE, 'w') as f:
-    f.write(filedata)
-    
-# ================= WRITE FINAL =================
-with open(FINAL_FILE, 'w') as f:
-    f.write(data)
 
 # ================= CLEANUP =================
 os.remove(SOURCE_FILE)
