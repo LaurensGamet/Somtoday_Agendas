@@ -24,6 +24,7 @@ Lokalen = [
     "ut006",
     "tm115_binask",
     "cb116\, cb117\, cb118",
+    "be114_binask",
 ]
 
 Lessen = {
