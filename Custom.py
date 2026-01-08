@@ -190,4 +190,5 @@ Lessen = {
     f'Les - dutl' : 'Duits',
     f'Les - maat' : 'Maatschappijleer',
     f'Les - mentor' : 'Mentor',
+    f'Les - kua' : 'Kunst Algemeen',
 }
