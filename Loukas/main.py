@@ -2,145 +2,118 @@ import requests
 import os
 import shutil
 import sys
+from datetime import date, timedelta
 
 sys.path.append('/home/laurens/Somtoday_Agendas')
 import Custom_Loukas as Custom
 
-from datetime import date, timedelta
+# ================= CONFIG =================
+BASE_PATH = '/home/laurens/Somtoday_Agendas/Loukas'
+FINAL_FILE = f'{BASE_PATH}/Final-File.ics'
+SOURCE_FILE = f'{BASE_PATH}/source.ics'
 
-# Huidige datum
-vandaag = date.today()
+URL = (
+    'https://rsgrijks.zportal.nl/api/v3/ical'
+    '?access_token=mc24jkscuoqntcvkuqom8nt8uh'
+    '&startWeekOffset=0&endWeekOffset=1&valid=true&user=~me'
+)
 
-# Huidig jaar en weeknummer
-jaar, week, _ = vandaag.isocalendar()
+REMOVE_KEYWORDS = ['[x]']
 
-# Volgende week (zelfde jaar/week systeem)
-volgende_week_datum = vandaag + timedelta(weeks=1)
-jaar_volgende, week_volgende, _ = volgende_week_datum.isocalendar()
+# ================= DOWNLOAD =================
+if os.path.exists(FINAL_FILE):
+    os.remove(FINAL_FILE)
 
-# Alles samenplakken
-resultaat = f"{jaar}{week:02d}-{jaar}{week_volgende:02d}"
-# Give simpler names
-file1 = f'/home/laurens/Somtoday_Agendas/Loukas/rooster-{resultaat}.txt'
-file2 = '/home/laurens/Somtoday_Agendas/Loukas/Final-File.ics'
+r = requests.get(URL)
+with open(SOURCE_FILE, 'wb') as f:
+    f.write(r.content)
 
-# Makes sure no duplicate files
-if os.path.exists(file2):
-  os.remove(file2)
-else:
-  print("The file does not exist")
+shutil.copyfile(SOURCE_FILE, FINAL_FILE)
 
-# Gets original file
-url = 'https://rsgrijks.zportal.nl/api/v3/ical?access_token=mc24jkscuoqntcvkuqom8nt8uh&startWeekOffset=0&endWeekOffset=1&valid=true&user=~me'
-r = requests.get(url, allow_redirects=True)
-open(file1, 'wb').write(r.content)
+# ================= VEVENT CLEANER =================
+def remove_events_with_keywords(filename, keywords):
+    with open(filename, 'r') as f:
+        lines = f.readlines()
 
-with open(file1, 'r') as file:
-  filedata = file.read()
-
-# Makes Final-File.ics from original
-shutil.copyfile(file1, file2)
-
-# Replaces text in original file
-
-# Studiedag
-def remove_events_with_summary(input_file, output_file, keyword):
-    with open(input_file, 'r') as file:
-        lines = file.readlines()
-
-    result_lines = []  # List to store lines to keep
-    i = 0  # Line index
+    result = []
+    i = 0
 
     while i < len(lines):
-        # Check if a VEVENT block starts
         if lines[i].strip() == "BEGIN:VEVENT":
-            # Check if the block is at least 11 lines long
-            if i + 1 < len(lines):
-                # Check if the fourth line in the block contains the keyword
-                if f"SUMMARY:{keyword}" in lines[i + 3]:
-                    #print(f"Deleting VEVENT block starting at line {i}")  # Debugging
-                    # Skip the 11 lines of this VEVENT block
-                    i += 11
-                    continue  # Skip appending these lines to the result
-            # If the block is too short, just append it (avoid breaking the structure)
-        result_lines.append(lines[i])
+            block = []
+            remove = False
+
+            while i < len(lines):
+                line = lines[i]
+                block.append(line)
+
+                if line.startswith("SUMMARY") and any(k in line for k in keywords):
+                    remove = True
+
+                if line.strip() == "END:VEVENT":
+                    break
+                i += 1
+
+            if not remove:
+                result.extend(block)
+        else:
+            result.append(lines[i])
+
         i += 1
 
-    # Write the remaining lines to the output file
-    with open(output_file, 'w') as file:
-        file.writelines(result_lines)
+    with open(filename, 'w') as f:
+        f.writelines(result)
 
-# Test the function
-remove_events_with_summary(file1, file2, '[x]')
+remove_events_with_keywords(FINAL_FILE, REMOVE_KEYWORDS)
 
+# ================= TEXT MODIFICATIONS =================
+with open(FINAL_FILE, 'r') as f:
+    data = f.read()
 
-with open(file2, 'r') as file:
-  filedata = file.read()
-
-# Naam agenda
-filedata = filedata.replace('BEGIN:VCALENDAR', 'BEGIN:VCALENDAR\nNAME:Zermelo Loukas\nX-WR-CALNAME:Zermelo Loukas')
-
-with open(file2, 'w') as file:
-  file.write(filedata)
-
-# Dubbele shit
-filedata = filedata.replace('END:VEVENT\nEND:VEVENT', 'END:VEVENT')
-
-with open(file2, 'w') as file:
-  file.write(filedata)
+# Kalendernaam
+data = data.replace(
+    'BEGIN:VCALENDAR',
+    'BEGIN:VCALENDAR\nNAME:Zermelo Loukas\nX-WR-CALNAME:Zermelo Loukas'
+)
 
 # Toetsen
-filedata = filedata.replace('[o] [toets] ', '[TOETS]')
+data = data.replace('[o] [toets] ', '[TOETS]')
 
-with open(file2, 'w') as file:
-  file.write(filedata)
-
-# Perform all replacements
+# Lesnamen
 for old, new in Custom.Lessen.items():
-    filedata = filedata.replace(old, new)
+    data = data.replace(old, new)
 
-# Write the modified data back to the file
-with open(file2, 'w') as file:
-    file.write(filedata)
-
-# Lokalen
-
-# Define the ranges for replacements
+# ================= LOKALEN =================
 ranges = {
     "l": (1, 300),
     "d": (1, 300),
-    "ska" :(1,300)
+    "ska": (1, 300)
 }
 
-# Perform range-based replacements
-for prefix, (start, end) in ranges.items():
-    for i in range(start, end + 1):
-        formatted_number = f"{i:03d}" if prefix in ["l", "d"] else f"{i:01d}"
-        filedata = filedata.replace(f"SUMMARY:[>] ", f'SUMMARY:')
-        filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:')
+def format_num(prefix, i):
+    return f"{i:03d}" if prefix in ["l", "d"] else f"{i}"
 
 for prefix, (start, end) in ranges.items():
     for i in range(start, end + 1):
-        formatted_number = f"{i:03d}" if prefix in ["l", "d"] else f"{i:01d}"
-        filedata = filedata.replace(f"SUMMARY:[!] ", f'SUMMARY:')
-        filedata = filedata.replace(f"SUMMARY:{prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:')
+        num = format_num(prefix, i)
 
-for prefix, (start, end) in ranges.items():
-    for i in range(start, end + 1):
-        formatted_number = f"{i:03d}" if prefix in ["l", "d"] else f"{i:01d}"
-        filedata = filedata.replace(f"SUMMARY:[>] ", f'SUMMARY:')
-        filedata = filedata.replace(f"SUMMARY:[TOETS] {prefix}{formatted_number} ", f'LOCATION:{prefix}{formatted_number}\nSUMMARY:[TOETS] ')
-# Perform specific replacements
-#for replacement in Custom.Lokalen:
-#    filedata = filedata.replace(replacement, 'SUMMARY:')
+        data = data.replace(
+            f"SUMMARY:{prefix}{num} ",
+            f"LOCATION:{prefix}{num}\nSUMMARY:"
+        )
 
-# Write the modified data back to the file
-with open(file2, 'w') as file:
-    file.write(filedata)
+        data = data.replace("SUMMARY:[>] ", "SUMMARY:")
+        data = data.replace("SUMMARY:[!] ", "SUMMARY:")
+        data = data.replace(
+            f"SUMMARY:[TOETS] {prefix}{num} ",
+            f"LOCATION:{prefix}{num}\nSUMMARY:[TOETS] "
+        )
 
-# Delete temporary file
+# ================= WRITE FINAL =================
+with open(FINAL_FILE, 'w') as f:
+    f.write(data)
 
-if os.path.exists(file1):
-  os.remove(file1)
-else:
-  print("The file does not exist")
+# ================= CLEANUP =================
+os.remove(SOURCE_FILE)
+
+print("✅ Zermelo agenda opgeschoond")
