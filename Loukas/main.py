@@ -85,11 +85,8 @@ for old, new in Custom.Lessen.items():
     
 # Lokalen (Custom)
 for loc in Custom_Loukas.Lokalen:
-    filedata = filedata.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
+    data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
 
-with open(FINAL_FILE, 'w') as f:
-    f.write(filedata)
-    
 # ================= WRITE FINAL =================
 with open(FINAL_FILE, 'w') as f:
     f.write(data)
