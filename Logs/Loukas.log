@@ -6272,3 +6272,18 @@ SyntaxError: invalid syntax. Perhaps you forgot a comma?
 Done
 
 
+02:00 08-01-2026
+
+# Get in right directory
+
+# Get up to date
+Already up to date.
+
+# Run main file
+  File "/home/laurens/Somtoday_Agendas/Loukas/main.py", line 103
+    f"LOCATION:{prefix}{num}\nSUMMARY:"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Done
+
+
