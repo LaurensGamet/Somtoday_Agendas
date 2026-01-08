@@ -84,7 +84,6 @@ def remove_events_with_summary_1(input_file, output_file, keyword):
         file.writelines(result_lines)
 # Test the function
 remove_events_with_summary(file1, file2, 'Studiedag')
-remove_events_with_summary(file1, file2, 'Lesvrij')
 remove_events_with_summary_1(file1, file2, 'Sneeuwvrij')
 
 with open(file2, 'r') as file:
@@ -127,6 +126,8 @@ for replacement in Custom.Lokalen:
 # Write the modified data back to the file
 with open(file2, 'w') as file:
     file.write(filedata)
+
+remove_events_with_summary(file1, file2, 'Lesvrij')
 
 # Delete temporary file
 
