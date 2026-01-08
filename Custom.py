@@ -11,6 +11,8 @@ Lokalen = [
     "tm128_tmc",
     "tm145_o&o",
     "tm146_o&o",
+    "tm145_o&o\, tm146_o&o",
+    "tm146_o&o\, tm145_o&o",
     "cb012_gym",
     "tm116_binask\, tm115_binask",
     "tm034\, tm035",
