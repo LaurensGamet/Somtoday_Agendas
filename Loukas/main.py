@@ -101,6 +101,12 @@ for prefix, (start, end) in ranges.items():
         data = data.replace(
             f"SUMMARY:{prefix}{num} ",
             f"LOCATION:{prefix}{num}\nSUMMARY:"
+        data = data.replace(
+            f"SUMMARY:{prefix}{num}_1 ",
+            f"LOCATION:{prefix}{num}\nSUMMARY:"
+        data = data.replace(
+            f"SUMMARY:{prefix}{num}_2 ",
+            f"LOCATION:{prefix}{num}\nSUMMARY:"
         )
 
         data = data.replace("SUMMARY:[>] ", "SUMMARY:")
