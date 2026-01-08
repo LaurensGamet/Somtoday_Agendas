@@ -57,13 +57,13 @@ def remove_events_with_summary(input_file, output_file, keyword):
     with open(output_file, 'w') as file:
         file.writelines(result_lines)
 
-# Remove unnecessary events
-remove_events_with_summary(file1, file2, 'Studiedag')
-remove_events_with_summary(file1, file2, 'Sneeuwvrij')
-
 # Read the file
 with open(file2, 'r') as file:
   filedata = file.read()
+
+# Remove unnecessary events
+remove_events_with_summary(file1, file2, 'Studiedag')
+remove_events_with_summary(file1, file2, 'Sneeuwvrij')
 
 # Naam agenda
 filedata = filedata.replace('NAME:Somtoday agenda', 'NAME:Somtoday Laurens')
