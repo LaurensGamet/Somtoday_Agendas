@@ -57,32 +57,11 @@ def remove_events_with_summary(input_file, output_file, keyword):
     with open(output_file, 'w') as file:
         file.writelines(result_lines)
 
-def remove_events_with_summary_1(input_file, output_file, keyword):
-    with open(input_file, 'r') as file:
-        lines = file.readlines()
+# Remove unnecessary events
+remove_events_with_summary(file1, file2, 'Studiedag')
+remove_events_with_summary(file1, file2, 'Sneeuwvrij')
 
-    result_lines = []  # List to store lines to keep
-    i = 0  # Line index
-
-    while i < len(lines):
-        # Check if a VEVENT block starts
-        if lines[i].strip() == "BEGIN:VEVENT":
-            # Check if the block is at least 11 lines long
-            if i + 10 < len(lines):
-                # Check if the fourth line in the block contains the keyword
-                if f"SUMMARY:{keyword}" in lines[i + 4]:
-                    #print(f"Deleting VEVENT block starting at line {i}")  # Debugging
-                    # Skip the 11 lines of this VEVENT block
-                    i += 12
-                    continue  # Skip appending these lines to the result
-            # If the block is too short, just append it (avoid breaking the structure)
-        result_lines.append(lines[i])
-        i += 1
-
-    # Write the remaining lines to the output file
-    with open(output_file, 'w') as file:
-        file.writelines(result_lines)
-
+# Read the file
 with open(file2, 'r') as file:
   filedata = file.read()
 
@@ -125,8 +104,6 @@ with open(file2, 'w') as file:
     file.write(filedata)
   
 # Remove unnecessary events
-remove_events_with_summary(file1, file2, 'Studiedag')
-remove_events_with_summary_1(file1, file2, 'Sneeuwvrij')
 remove_events_with_summary(file1, file2, 'Lesvrij')
 
 # Delete temporary file
