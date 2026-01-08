@@ -84,7 +84,7 @@ for old, new in Custom.Lessen.items():
     data = data.replace(old, new)
     
 # Lokalen (Custom)
-for loc in Custom_Loukas.Lokalen:
+for loc in Custom.Lokalen:
     data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
 
 # ================= WRITE FINAL =================
