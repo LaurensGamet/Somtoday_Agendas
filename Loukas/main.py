@@ -87,7 +87,8 @@ for old, new in Custom.Lessen.items():
 ranges = {
     "l": (1, 300),
     "d": (1, 300),
-    "ska": (1, 300)
+    "ska": (1, 300),
+    "t": (1, 300)
 }
 
 def format_num(prefix, i):
