@@ -86,18 +86,16 @@ for old, new in Custom.Lessen.items():
     data = data.replace(old, new)
     
 # Lokalen (Custom)
-#for loc in Custom.Lokalen:
-#    data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
+for loc in Custom.Lokalen:
+    data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
 
-# ================= WRITE FINAL =================
-with open(FINAL_FILE, 'w') as f:
-    f.write(data)
 # ================= LOKALEN =================
 ranges = {
     "l": (1, 300),
     "d": (1, 300),
     "ska": (1, 300),
-    "t": (1, 300)
+    "t": (1, 300),
+    "s": (1,300)
 }
 
 def format_num(prefix, i):
@@ -118,6 +116,10 @@ for prefix, (start, end) in ranges.items():
             f"SUMMARY:[TOETS] {prefix}{num} ",
             f"LOCATION:{prefix}{num}\nSUMMARY:[TOETS] "
         )
+
+# ================= WRITE FINAL =================
+with open(FINAL_FILE, 'w') as f:
+    f.write(data)
 
 # ================= CLEANUP =================
 os.remove(SOURCE_FILE)
