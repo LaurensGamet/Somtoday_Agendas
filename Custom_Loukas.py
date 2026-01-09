@@ -15,7 +15,7 @@ Lessen = {
     f'lo v4.lo_turnenspringen2': 'Lichamelijke Opvoeding',
 }
 
-#Lokalen = [
-#    "l224_1",
-#    "l224_2"
-#]
+Lokalen = [
+    "l224_1",
+    "l224_2"
+]
