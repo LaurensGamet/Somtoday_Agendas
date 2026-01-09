@@ -7902,3 +7902,21 @@ Already up to date.
 Done
 
 
+14:51 09-01-2026
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   749aee648..4c40755df  main       -> origin/main
+Updating 749aee648..4c40755df
+Fast-forward
+ Custom_Loukas.py |  8 ++++----
+ Loukas/main.py   | 14 ++++++++------
+ 2 files changed, 12 insertions(+), 10 deletions(-)
+
+# Run main file
+✅ Agenda succesvol opgeschoond
+Done
+
+
