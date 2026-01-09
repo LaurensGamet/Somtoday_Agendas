@@ -87,8 +87,10 @@ for old, new in Custom.Lessen.items():
     
 # Lokalen (Custom)
 for loc in Custom.Lokalen:
-    data = data.replace(f"SUMMARY:{loc} - ", 'SUMMARY:')
-
+    data = data.replace(
+        f"SUMMARY:{loc} ",
+        f"LOCATION:{loc}\nSUMMARY:"
+    )
 # ================= LOKALEN =================
 ranges = {
     "l": (1, 300),
