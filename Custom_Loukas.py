@@ -9,6 +9,7 @@ Lessen = {
     f'nat v4.nat1': 'Natuurkunde',
     f'gtc ltc v4.ltc1 v4.gtc1': 'Grieks en Latijn',
     f'gltc v4.gltc1' : 'Grieks en Latijn',
+    f'maat v4.maat2 v4.maat1 v4.maat3' : 'Maatschappijleer',
     f'maat v4.maat2': 'Maatschappijleer',
     f'toets v4a v4c v4b v4e v4d': 'Toets',
     f'lo v4.lo1': 'Lichamelijke Opvoeding',
