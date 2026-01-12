@@ -101,7 +101,7 @@ ranges = {
 }
 
 def format_num(prefix, i):
-    return f"{i:03d}" if prefix in ["l", "d"] else f"{i}"
+    return f"{i:03d}" if prefix in ["l", "d", "t"] else f"{i}"
 
 for prefix, (start, end) in ranges.items():
     for i in range(start, end + 1):
