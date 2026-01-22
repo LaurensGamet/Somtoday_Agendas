@@ -13,7 +13,7 @@ FINAL_FILE  = f'{BASE_PATH}/Final-File.ics'
 
 URL = 'https://api.somtoday.nl/rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54'
 
-REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij']
+REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij', 'Studiemiddag', 'Studieochtend']
 
 # ================= DOWNLOAD =================
 if os.path.exists(FINAL_FILE):
