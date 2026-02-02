@@ -3850,3 +3850,11 @@ Already up to date.
 Done
 
 
+16:30 02-02-2026
+
+# Get in right directory
+
+# Get up to date
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': Could not resolve host: github.com
+
+# Run main file
