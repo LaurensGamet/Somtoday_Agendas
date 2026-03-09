@@ -114,6 +114,7 @@ for prefix, (start, end) in ranges.items():
 
         data = data.replace("SUMMARY:[>] ", "SUMMARY:")
         data = data.replace("SUMMARY:[!] ", "SUMMARY:")
+        data = data.replace("SUMMARY:[o] ", "SUMMARY:")
         data = data.replace(
             f"SUMMARY:[TOETS] {prefix}{num} ",
             f"LOCATION:{prefix}{num}\nSUMMARY:[TOETS] "
