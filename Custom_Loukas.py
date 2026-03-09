@@ -14,10 +14,12 @@ Lessen = {
     f'toets v4a v4c v4b v4e v4d': 'Toets',
     f'lo v4.lo1': 'Lichamelijke Opvoeding',
     f'lo v4.lo_turnenspringen2': 'Lichamelijke Opvoeding',
+    f'lo v4.lo_golf3': 'Lichamelijke opvoeding',
     f'wisb v4.wisb1 v4.wisb2': 'Wiskunde B',
 }
 
 Lokalen = [
     "l224_1",
-    "l224_2"
+    "l224_2",
+    "s3"
 ]
