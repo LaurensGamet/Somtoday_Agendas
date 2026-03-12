@@ -1455,3 +1455,20 @@ Already up to date.
 Done
 
 
+12:30 12-03-2026
+
+# Get in right directory
+
+# Get up to date
+From https://github.com/LaurensGamet/Somtoday_Agendas
+   ac552262c..86253e11d  main       -> origin/main
+Updating ac552262c..86253e11d
+Fast-forward
+ Laurens/main.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+# Run main file
+✅ Agenda succesvol opgeschoond en specifieke lessen verwijderd!
+Done
+
+
