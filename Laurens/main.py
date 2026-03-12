@@ -23,8 +23,10 @@ REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij', 'Studiemiddag', 'Studie
 REMOVE_TIMESLOTS = [
     (0, "09:15", "10:00"), # Maandag
     (0, "13:45", "14:30"), # Maandag
+    (0, "15:15", "16:00"),  # Maandag
     (1, "14:30", "15:15"), # Dinsdag
-    (2, "08:30", "10:00"), # Woensdag
+    (2, "08:30", "9:15"), # Woensdag
+    (2, "9:15", "10:00"),   # Woensdag
     (3, "09:15", "10:00"), # Donderdag
     (3, "15:15", "16:00"), # Donderdag
     (4, "09:15", "10:00"), # Vrijdag
