@@ -2,6 +2,9 @@ import requests
 import os
 import shutil
 import sys
+import re
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 sys.path.append('/home/laurens/Somtoday_Agendas')
 import Custom
@@ -15,6 +18,18 @@ URL = 'https://elo.somtoday.nl/services/webdav/calendarfeed/58405be0-5611-4aba-b
 
 REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij', 'Studiemiddag', 'Studieochtend']
 
+# Formaat: (Weekdag, Starttijd, Eindtijd) 
+# Weekdagen: 0=Maandag, 1=Dinsdag, 2=Woensdag, 3=Donderdag, 4=Vrijdag
+REMOVE_TIMESLOTS = [
+    (0, "09:15", "10:00"), # Maandag
+    (0, "13:45", "14:30"), # Maandag
+    (1, "14:30", "15:15"), # Dinsdag
+    (2, "08:30", "10:00"), # Woensdag
+    (3, "09:15", "10:00"), # Donderdag
+    (3, "15:15", "16:00"), # Donderdag
+    (4, "09:15", "10:00"), # Vrijdag
+]
+
 # ================= DOWNLOAD =================
 if os.path.exists(FINAL_FILE):
     os.remove(FINAL_FILE)
@@ -25,8 +40,29 @@ with open(SOURCE_FILE, 'wb') as f:
 
 shutil.copyfile(SOURCE_FILE, FINAL_FILE)
 
+# ================= HELPER FUNCTIE DATUM/TIJD =================
+def parse_ics_datetime(dt_str):
+    """Zet een ICS datumblob (bijv. 20231016T071500Z) om naar lokale Nederlandse tijd."""
+    match = re.search(r'(\d{8}T\d{6})(Z?)', dt_str)
+    if not match:
+        return None
+    
+    time_str, is_utc = match.groups()
+    dt = datetime.strptime(time_str, "%Y%m%dT%H%M%S")
+    
+    # Reken UTC om naar de Nederlandse tijdzone
+    if is_utc == 'Z':
+        dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+        dt = dt.astimezone(ZoneInfo("Europe/Amsterdam"))
+    else:
+        # Als er geen Z staat, gaan we uit van lokale tijd
+        dt = dt.replace(tzinfo=ZoneInfo("Europe/Amsterdam"))
+        
+    return dt
+
 # ================= VEVENT FILTER =================
-def remove_events_with_keywords(filename, keywords):
+def filter_events(filename, keywords, timeslots):
+    """Filtert events op basis van de lijst met keywords én specifieke tijdsblokken."""
     with open(filename, 'r') as f:
         lines = f.readlines()
 
@@ -37,17 +73,37 @@ def remove_events_with_keywords(filename, keywords):
         if lines[i].strip() == "BEGIN:VEVENT":
             block = []
             remove = False
+            dtstart = None
+            dtend = None
 
             while i < len(lines):
                 line = lines[i]
                 block.append(line)
 
+                # 1. Check op keywords in SUMMARY
                 if line.startswith("SUMMARY") and any(k in line for k in keywords):
                     remove = True
+
+                # 2. Extract de start- en eindtijd voor de timeslot check
+                if line.startswith("DTSTART"):
+                    dtstart = parse_ics_datetime(line)
+                elif line.startswith("DTEND"):
+                    dtend = parse_ics_datetime(line)
 
                 if line.strip() == "END:VEVENT":
                     break
                 i += 1
+            
+            # 3. Check of de les in een van de verboden tijdsblokken valt
+            if not remove and dtstart and dtend:
+                weekday = dtstart.weekday()
+                start_time = dtstart.strftime("%H:%M")
+                end_time = dtend.strftime("%H:%M")
+                
+                for (w, st, et) in timeslots:
+                    if weekday == w and start_time == st and end_time == et:
+                        remove = True
+                        break
 
             if not remove:
                 result.extend(block)
@@ -60,7 +116,7 @@ def remove_events_with_keywords(filename, keywords):
         f.writelines(result)
 
 # ================= CLEAN EVENTS =================
-remove_events_with_keywords(FINAL_FILE, REMOVE_KEYWORDS)
+filter_events(FINAL_FILE, REMOVE_KEYWORDS, REMOVE_TIMESLOTS)
 
 # ================= TEXT REPLACEMENTS =================
 with open(FINAL_FILE, 'r') as f:
@@ -99,4 +155,4 @@ with open(FINAL_FILE, 'w') as f:
 # ================= CLEANUP =================
 os.remove(SOURCE_FILE)
 
-print("✅ Agenda succesvol opgeschoond")
+print("✅ Agenda succesvol opgeschoond en specifieke lessen verwijderd!")
