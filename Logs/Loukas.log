@@ -3118,3 +3118,16 @@ Already up to date.
 Done
 
 
+10:01 22-03-2026
+
+# Get in right directory
+
+# Get up to date
+remote: Internal Server Error
+fatal: unable to access 'https://github.com/LaurensGamet/Somtoday_Agendas.git/': The requested URL returned error: 500
+
+# Run main file
+✅ Zermelo agenda opgeschoond
+Done
+
+
