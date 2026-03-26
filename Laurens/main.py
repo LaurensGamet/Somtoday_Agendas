@@ -16,7 +16,7 @@ FINAL_FILE  = f'{BASE_PATH}/Final-File.ics'
 
 URL = 'https://elo.somtoday.nl/services/webdav/calendarfeed/58405be0-5611-4aba-be66-9894a1009f12/4fc988ad-6d4d-4c2a-aaf0-8207665bf69b'
 
-REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij', 'Studiemiddag', 'Studieochtend']
+REMOVE_KEYWORDS = ['Studiedag', 'Sneeuwvrij', 'Lesvrij', 'Studiemiddag', 'Studieochtend', 'Goede_vrijdag']
 
 # Formaat: (Weekdag, Starttijd, Eindtijd) 
 # Weekdagen: 0=Maandag, 1=Dinsdag, 2=Woensdag, 3=Donderdag, 4=Vrijdag
