@@ -3,11 +3,11 @@ import os
 import shutil
 import sys
 
-sys.path.append('/home/laurens/Somtoday_Agendas')
+sys.path.append('/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas')
 import Custom
 
 # ================= CONFIG =================
-BASE_PATH = '/home/laurens/Somtoday_Agendas/Madelief'
+BASE_PATH = '/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Madelief'
 SOURCE_FILE = f'{BASE_PATH}/original.ics'
 FINAL_FILE  = f'{BASE_PATH}/Final-File.ics'
 
