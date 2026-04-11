@@ -6,11 +6,11 @@ import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-sys.path.append('/home/laurens/Somtoday_Agendas')
+sys.path.append('/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/')
 import Custom
 
 # ================= CONFIG =================
-BASE_PATH = '/home/laurens/Somtoday_Agendas/Laurens'
+BASE_PATH = '/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Laurens'
 SOURCE_FILE = f'{BASE_PATH}/original.ics'
 FINAL_FILE  = f'{BASE_PATH}/Final-File.ics'
 
