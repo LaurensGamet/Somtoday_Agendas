@@ -1570,3 +1570,16 @@ Already up to date.
 Done
 
 
+18:00 23-04-2026
+
+# Get in right directory
+
+# Get up to date
+error: RPC failed; HTTP 500 curl 22 The requested URL returned error: 500
+fatal: expected flush after ref listing
+
+# Run main file
+✅ Agenda succesvol opgeschoond
+Done
+
+
