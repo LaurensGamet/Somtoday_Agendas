@@ -1317,3 +1317,16 @@ To add an exception for this directory, call:
 Done
 
 
+00:31 02-07-2026
+
+# Get in right directory
+
+# Get up to date
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+
+# Run main file
+✅ Zermelo agenda opgeschoond
+Done
+
+
