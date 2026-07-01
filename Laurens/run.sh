@@ -4,10 +4,10 @@ current_datetime=$(date +"%H%M%d%m%Y")
 echo $(date +"%H"":""%M"" ""%d""-""%m""-""%Y")
 echo
 echo "# Get in right directory"
-cd /home/laurens/Somtoday_Agendas
+cd /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas
 
-if [ -f "/home/laurens/Somtoday_Agendas/.git/index.lock" ]; then
-    sudo rm -f /home/laurens/Somtoday_Agendas/.git/index.lock
+if [ -f "/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/.git/index.lock" ]; then
+    sudo rm -f /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/.git/index.lock
 fi
 
 echo
@@ -20,7 +20,7 @@ sudo git pull
 echo
 
 echo "# Run main file"
-sudo python3 /home/laurens/Somtoday_Agendas/Laurens/main.py
+sudo python3 /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Laurens/main.py
 echo "Done"
 
 echo  

@@ -4,11 +4,11 @@ import shutil
 import sys
 from datetime import date, timedelta
 
-sys.path.append('/home/laurens/Somtoday_Agendas')
+sys.path.append('/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas')
 import Custom_Loukas as Custom
 
 # ================= CONFIG =================
-BASE_PATH = '/home/laurens/Somtoday_Agendas/Loukas'
+BASE_PATH = '/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Loukas'
 FINAL_FILE = f'{BASE_PATH}/Final-File.ics'
 SOURCE_FILE = f'{BASE_PATH}/source.ics'
 
