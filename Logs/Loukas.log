@@ -1272,3 +1272,48 @@ Done
 /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Loukas/run.sh: line 7: cd: $'/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas\r': No such file or directory
 /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Loukas/run.sh: line 8: $'\r': command not found
 /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas/Loukas/run.sh: line 28: syntax error: unexpected end of file
+00:25 02-07-2026
+
+# Get in right directory
+
+# Get up to date
+fatal: detected dubious ownership in repository at '/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas
+
+# Run main file
+✅ Zermelo agenda opgeschoond
+Done
+
+
+00:26 02-07-2026
+
+# Get in right directory
+
+# Get up to date
+fatal: detected dubious ownership in repository at '/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas
+
+# Run main file
+✅ Zermelo agenda opgeschoond
+Done
+
+
+00:30 02-07-2026
+
+# Get in right directory
+
+# Get up to date
+fatal: detected dubious ownership in repository at '/mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /mnt/c/Users/laure/OneDrive/Documenten/Somtoday_Agendas
+
+# Run main file
+✅ Zermelo agenda opgeschoond
+Done
+
+
